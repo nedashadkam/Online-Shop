@@ -1,0 +1,14 @@
+.navlink-style {
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: #445778;
+}

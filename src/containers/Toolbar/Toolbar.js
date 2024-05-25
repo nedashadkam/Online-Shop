@@ -2,10 +2,11 @@ import React from "react";
 import './Toolbar.css';
 import Button from "../../components/button/Button";
 import Logo from "../../components/Logo/Logo";
+import MenuItems from "../../components/MenuItems/MenuItems";
 
 const Toolbar = () => {
     return (
-        <div className="toolbar">
+        <header className="toolbar">
             <div style={{ color: 'white' }}>
                 <div style={{display: 'flex', alignItems: 'center'}}>
                     <Button btnStyle="btn-log-in" >
@@ -16,8 +17,10 @@ const Toolbar = () => {
                 </div>
                 <Logo/>
             </div>
-            <nav></nav>
-        </div>
+            <nav>
+                <MenuItems />
+            </nav>
+        </header>
     )
 }
 
