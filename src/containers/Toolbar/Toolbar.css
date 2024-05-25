@@ -1,0 +1,53 @@
+.toolbar {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+.toolbar > div {
+    background-color: #8c0048;
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar > nav {
+    background-color: rgb(248, 248, 248);;
+    height: 35px;
+    width: 100%;
+}
+
+span {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../assets/icons/flUhRq6tzZclQEJ-Vdg-IuiaDsNc\ \(1\).woff2') format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
