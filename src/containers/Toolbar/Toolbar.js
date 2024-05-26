@@ -6,7 +6,8 @@ import MenuItems from "../../components/MenuItems/MenuItems";
 
 const Toolbar = () => {
     return (
-        <header className="toolbar">
+        <div>
+            <header className="toolbar">
             <div style={{ color: 'white' }}>
                 <div style={{display: 'flex', alignItems: 'center'}}>
                     <Button btnStyle="btn-log-in" >
@@ -20,7 +21,10 @@ const Toolbar = () => {
             <nav>
                 <MenuItems />
             </nav>
+            
         </header>
+        <div className="modal-style">hello neda</div>
+        </div>
     )
 }
 

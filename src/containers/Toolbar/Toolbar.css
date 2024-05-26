@@ -3,6 +3,7 @@
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 100;
 }
 
 .toolbar > div {
@@ -26,6 +27,18 @@
 span {
     padding-left: 10px;
     cursor: pointer;
+}
+
+.modal-style {
+    background-color: rgb(248, 248, 248);
+    position: fixed;
+    z-index: 110;
+    width: 30%;
+    height: 36%;
+    left: 35%;
+    top: 32%;
+    border: 1px solid darkgray;
+    border-radius: 10px;
 }
 
 

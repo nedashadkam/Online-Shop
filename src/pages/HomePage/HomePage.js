@@ -1,9 +1,10 @@
 import React from "react";
+import Carousel from "../../components/Carousel/Carousel";
 
 const HomePage = () => {
     return (
-        <div style={{ marginTop: '110px' }}>
-            HomePage
+        <div>
+            <Carousel />
         </div>
     )
 }
