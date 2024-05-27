@@ -4,7 +4,7 @@ import './MenuItem.css';
 
 const MenuItem = (props) => {
     return (
-        <NavLink className={({ isActive }) => isActive ? 'navlink-style red' : 'navlink-style blue'} to={props.link}>
+        <NavLink style={props.style} className={({ isActive }) => isActive ? 'navlink-style red' : 'navlink-style blue'} to={props.link}>
             {props.children}
         </NavLink>
     )

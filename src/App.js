@@ -3,10 +3,13 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Toolbar from './containers/Toolbar/Toolbar';
 import HomePage from './pages/HomePage/HomePage';
-import Carpet from './pages/Carpet';
 import Glass from './pages/Glass';
 import Wooden from './pages/Wooden';
 import Pottery from './pages/Pottery';
+import TableCloth from './pages/Tablecloth';
+import Candle from './pages/Candle';
+import Ceramic from './pages/Ceramic';
+import Store from './pages/Store/Store';
 
 function App() {
   return (
@@ -15,11 +18,14 @@ function App() {
         <Toolbar />
         <Routes>
             <Route index element={<HomePage />} />
-            <Route path='/pottery' element={<Pottery />} />
-            <Route path='/wodden' element={<Wooden />} />
-            <Route path='/glass' element={<Glass />} />
-            <Route path='/carpet' element={<Carpet />} />
-         
+            <Route path='/store' element={<Store />} />
+            <Route path='/store/pottery' element={<Pottery />} />
+            <Route path='/store/wodden' element={<Wooden />} />
+            <Route path='/store/glass' element={<Glass />} />
+            <Route path='/store/candle' element={<Candle />} />
+            <Route path='/store/ceramic' element={<Ceramic />} />
+            <Route path='/store/tablecloth' element={<TableCloth />} />
+            <Route path='*' element={<h1>404</h1>} />
         </Routes>
       </BrowserRouter>
     </div>
