@@ -1,0 +1,27 @@
+.prodactItem {
+    width: 20%;
+    height: 381px;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prodactItem img {
+    width: 80%;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+.prodactItem span {
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    color: #445778;
+}

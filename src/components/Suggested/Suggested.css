@@ -1,0 +1,11 @@
+.keeper-of-suggestion {
+    margin: 40px 20px;
+    background-color: antiquewhite;
+}
+
+.suggestion-items {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: yellow;
+}

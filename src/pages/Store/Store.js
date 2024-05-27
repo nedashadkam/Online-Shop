@@ -2,6 +2,7 @@ import React from "react";
 import MenuItems from "../../components/MenuItems/MenuItems";
 import MenuItem from "../../components/MenuItem/MenuItem";
 import './Store.css';
+import Suggested from "../../components/Suggested/Suggested";
 
 const Store = () => {
     const menuItemStyle = {
@@ -26,6 +27,7 @@ const Store = () => {
                 <MenuItem link='/store/candle' style={menuItemStyle}>  شمع </MenuItem>
             </MenuItems>
             </div>
+            <Suggested />
 
         </main>
     )

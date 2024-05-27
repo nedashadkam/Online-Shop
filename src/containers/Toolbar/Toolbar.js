@@ -20,10 +20,10 @@ const Toolbar = () => {
             <header className="toolbar">
                 <div style={{ color: 'white' }}>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <Button btnStyle="btn-log-in" clicked={show} >
+                        <Button btnStyle="btn-style" clicked={show} >
                             ورود | عضویت
                         </Button>
-                        <span className="material-icons"> store </span>
+                        <span className="material-icons"> shopping_basket </span>
                     </div>
                     <Logo />
                 </div>
