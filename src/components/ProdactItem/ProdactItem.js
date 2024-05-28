@@ -5,11 +5,13 @@ import './ProdactItem.css';
 const ProdactItem = (props) => {
     return (
         <div className="prodactItem">
-            <img src={props.imageAddress} />
+            <div className="image-container">
+                <img src={props.imageAddress} />
+            </div>
             <span>{props.itemName}</span>
             <span>{props.itemPrice}</span>
             <Button btnStyle="btn-style" >
-                 افزودن به سبد خرید
+                افزودن به سبد خرید
             </Button>
         </div>
     )

@@ -1,36 +1,36 @@
 import React from "react";
+import './Store.css';
 import MenuItems from "../../components/MenuItems/MenuItems";
 import MenuItem from "../../components/MenuItem/MenuItem";
-import './Store.css';
 import Suggested from "../../components/Suggested/Suggested";
 
 const Store = () => {
     const menuItemStyle = {
         border: '3px solid #445778',
-    padding: '30px',
-    borderRadius: '20px',
-    margin: '10px',
-    backgroundColor: 'rgb(248, 248, 248)',
-    boxSizing: 'border-box',
-    boxShadow: '0px 0px 4px darkgray'
+        padding: '30px',
+        borderRadius: '20px',
+        margin: '10px',
+        backgroundColor: 'rgb(248, 248, 248)',
+        boxSizing: 'border-box',
+        boxShadow: '0px 0px 4px darkgray'
 
     }
     return (
-        <main className="container">
+        <main className="store-container">
             <div className="pages-path">
-            <MenuItems>
-                <MenuItem link='/store/pottery' style={menuItemStyle} >   سفال</MenuItem>
-                <MenuItem link='/store/wodden' style={menuItemStyle}> چوبی</MenuItem>
-                <MenuItem link='/store/glass' style={menuItemStyle} > شیشه ای</MenuItem>
-                <MenuItem link='/store/tablecloth' style={menuItemStyle} >  رومیزی </MenuItem>
-                <MenuItem link='/store/ceramic' style={menuItemStyle}>  سرامیک </MenuItem>
-                <MenuItem link='/store/candle' style={menuItemStyle}>  شمع </MenuItem>
-            </MenuItems>
+                <MenuItems>
+                    <span><MenuItem style={{width: '72px',padding: '43px 10px',borderRadius: '50px'}} link='/store/pottery'>   سفال</MenuItem></span>
+                    <span><MenuItem style={{width: '72px',padding: '43px 10px',borderRadius: '50px'}} link='/store/wodden'> چوبی</MenuItem></span>
+                    <span><MenuItem style={{width: '72px',padding: '43px 10px',borderRadius: '50px'}} link='/store/glass' > شیشه ای</MenuItem></span>
+                    <span><MenuItem style={{width: '72px',padding: '43px 10px',borderRadius: '50px'}} link='/store/tablecloth'  >  رومیزی </MenuItem></span>
+                    <span><MenuItem style={{width: '72px',padding: '43px 10px',borderRadius: '50px'}} link='/store/ceramic' >  سرامیک </MenuItem></span>
+                    <span><MenuItem style={{width: '72px',padding: '43px 10px',borderRadius: '50px'}} link='/store/candle'>  شمع </MenuItem></span>
+                </MenuItems>
             </div>
             <Suggested />
-
         </main>
     )
 }
 
 export default Store;
+

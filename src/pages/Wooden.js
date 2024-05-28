@@ -78,10 +78,10 @@ const Wooden = () => {
         }
     ]
     return (
-        <>
+        <main>
             <RouteMarker pageName='چوبی' />
-            <ProdactItems arrayItems={woodenItems} title="دسته بندی ظروف چوبی"  />
-        </>
+            <ProdactItems arrayItems={woodenItems} title="دسته بندی ظروف چوبی" />
+        </main>
     )
 }
 

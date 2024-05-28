@@ -78,10 +78,10 @@ const Pottery = () => {
         }
     ]
     return (
-        <>
+        <main>
             <RouteMarker pageName='سفالی' />
-            <ProdactItems arrayItems={potteryItems} title="دسته بندی ظروف سفالی"  />
-        </>
+            <ProdactItems arrayItems={potteryItems} title="دسته بندی ظروف سفالی" />
+        </main>
     )
 }
 

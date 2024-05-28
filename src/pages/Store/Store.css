@@ -1,16 +1,33 @@
-.container {
-    height: auto;
-    box-sizing: border-box;
+.store-container {
     margin-top: 110px;
-    /* background-color: yellow; */
-    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 .pages-path {
-    height: 130px;
+    width: 80%;
+    /* box-sizing: border-box; */
+    height: auto;
     box-sizing: border-box;
     padding: 10px;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+}
+
+.pages-path span {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #445778;
+    /* outline: 6px dotted #8c0048; */
+    box-shadow: 2px 2px 3px 2px gray;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: beige;
 }

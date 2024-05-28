@@ -3,9 +3,9 @@ import Carousel from "../../components/Carousel/Carousel";
 
 const HomePage = () => {
     return (
-        <div>
+        <main className="homepage-container">
             <Carousel />
-        </div>
+        </main>
     )
 }
 

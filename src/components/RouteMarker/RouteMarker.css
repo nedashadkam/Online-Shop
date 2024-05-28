@@ -1,6 +1,10 @@
 .route-marker {
-    margin-top: 115px;
+    width: 90%;
     text-align: end;
-    padding: 1px;
+    padding: 5px 25px;
     border-bottom: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    margin: 115px 5%;
+    margin-bottom: 0;
 }
+

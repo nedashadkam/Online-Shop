@@ -18,70 +18,70 @@ const Glass = () => {
     const glassItems = [
         {
             itemAddress: glassImega1,
-            itemName: '1', 
+            itemName: '1',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega2,
-            itemName: '2', 
+            itemName: '2',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega3,
-            itemName: '3', 
+            itemName: '3',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega4,
-            itemName: '4', 
+            itemName: '4',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega5,
-            itemName: '5', 
+            itemName: '5',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega6,
-            itemName: '6', 
+            itemName: '6',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega7,
-            itemName: '7', 
+            itemName: '7',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega8,
-            itemName: '8', 
+            itemName: '8',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega9,
-            itemName: '9', 
+            itemName: '9',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega10,
-            itemName: '10', 
+            itemName: '10',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega11,
-            itemName: '11', 
+            itemName: '11',
             itemPrice: '$'
         },
         {
             itemAddress: glassImega12,
-            itemName: '12', 
+            itemName: '12',
             itemPrice: '$'
         }
     ]
     return (
-        <>
-        <RouteMarker pageName='شیشه ای'/>
-                <ProdactItems arrayItems={glassItems} title="دسته بندی ظروف شیشه ای" />
-        </>
+        <main>
+            <RouteMarker pageName='شیشه ای' />
+            <ProdactItems arrayItems={glassItems} title="دسته بندی ظروف شیشه ای" />
+        </main>
     )
 }
 

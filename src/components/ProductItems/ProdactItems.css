@@ -1,11 +1,11 @@
- .candle-page-container {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ .page-container {
+     margin-top: 40px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
  }
 
- .candle-items-box {
+ .box-items {
      width: 80%;
      margin-top: 20px;
      text-align: center;
@@ -14,3 +14,73 @@
      justify-content: center;
 
  }
+
+
+ .line {
+     border-bottom: 1px solid gray;
+     display: inline-block;
+     width: 27em;
+     vertical-align: middle;
+ }
+
+ .title {
+     padding: 0px 25px;
+     font-size: 24px;
+     color: #504d4d;
+ }
+
+
+@media all and (max-width: 1400px) {
+    .line {
+        width: 20em;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}
+
+
+@media all and (max-width: 1200px) {
+    .line {
+        width: 18em;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}
+
+
+@media all and (max-width: 1000px) {
+    .line {
+        width: 15em;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
+
+
+
+@media all and (max-width: 960px) {
+    .line {
+        width: 12em;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
+
+
+@media all and (max-width: 700px) {
+    .line {
+        width: 8em;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+}

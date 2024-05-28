@@ -78,10 +78,10 @@ const Candle = () => {
         }
     ]
     return (
-        <>
+        <main>
             <RouteMarker pageName=' شمع' />
             <ProdactItems arrayItems={candleItems} title='دسته بندی شمع ها' />
-        </>
+        </main>
     )
 }
 

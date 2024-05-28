@@ -78,10 +78,10 @@ const TableCloth = () => {
         }
     ]
     return (
-        <>
+        <main>
             <RouteMarker pageName='رومیزی' />
             <ProdactItems arrayItems={tableclothItems} title="دسته بندی رومیزی"  />
-        </>
+        </main>
     )
 }
 
