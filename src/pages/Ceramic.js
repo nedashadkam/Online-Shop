@@ -1,6 +1,6 @@
 import React from "react";
+import RouteMarker from "../components/RouteMarker/RouteMarker";
 import ProdactItems from "../components/ProductItems/ProductItems";
-import ProdactItem from "../components/ProdactItem/ProdactItem";
 import ceramicImage1 from '../assets/images/ceramic/ceramic-1.jpg';
 import ceramicImage2 from '../assets/images/ceramic/ceramic-2.jpg';
 import ceramicImage3 from '../assets/images/ceramic/ceramic-3.jpg';
@@ -18,67 +18,70 @@ const Ceramic = () => {
     const ceramicItems = [
         {
             itemAddress: ceramicImage1,
-            itemName: '1', 
+            itemName: '1',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage2,
-            itemName: '2', 
+            itemName: '2',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage3,
-            itemName: '3', 
+            itemName: '3',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage4,
-            itemName: '4', 
+            itemName: '4',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage5,
-            itemName: '5', 
+            itemName: '5',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage6,
-            itemName: '6', 
+            itemName: '6',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage7,
-            itemName: '7', 
+            itemName: '7',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage8,
-            itemName: '8', 
+            itemName: '8',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage9,
-            itemName: '9', 
+            itemName: '9',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage10,
-            itemName: '10', 
+            itemName: '10',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage11,
-            itemName: '11', 
+            itemName: '11',
             itemPrice: '$'
         },
         {
             itemAddress: ceramicImage12,
-            itemName: '12', 
+            itemName: '12',
             itemPrice: '$'
         }
     ]
     return (
-        <ProdactItems arrayItems={ceramicItems} title="دسته بندی ظروف سرامیکی"  pageName='سرامیکی'/>
+        <>
+            <RouteMarker pageName='سرامیک' />
+            <ProdactItems arrayItems={ceramicItems} title="دسته بندی ظروف سرامیکی"  />
+        </>
     )
 }
 

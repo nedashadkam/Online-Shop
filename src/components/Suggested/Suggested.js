@@ -1,5 +1,5 @@
 import React from "react";
-// import ProdactItems from '../ProductItems/ProductItems';
+import ProdactItems from "../ProductItems/ProductItems";
 import imega1 from '../../assets/images/candle/candle-1.jpg';
 import imega2 from '../../assets/images/candle/candle-2.jpg';
 import imega3 from '../../assets/images/ceramic/ceramic-1.jpg';
@@ -41,8 +41,7 @@ const Suggested = () => {
         }
     ]
     return (
-            // <ProdactItems arrayItems={SuggestedItem} title="پیشنهاد ها" pageName='شیشه ای'/>
-            <div>Suggested</div>
+        <ProdactItems arrayItems={SuggestedItem} title='پیشنهادی ' />
     )
 }
 

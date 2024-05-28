@@ -1,4 +1,5 @@
 import React from "react";
+import RouteMarker from "../components/RouteMarker/RouteMarker";
 import ProdactItems from "../components/ProductItems/ProductItems";
 import potteryImega1 from '../assets/images/pottery/pottery-1.jpg';
 import potteryImega2 from '../assets/images/pottery/pottery-2.jpg';
@@ -17,67 +18,70 @@ const Pottery = () => {
     const potteryItems = [
         {
             itemAddress: potteryImega1,
-            itemName: '1', 
+            itemName: '1',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega2,
-            itemName: '2', 
+            itemName: '2',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega3,
-            itemName: '3', 
+            itemName: '3',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega4,
-            itemName: '4', 
+            itemName: '4',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega5,
-            itemName: '5', 
+            itemName: '5',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega6,
-            itemName: '6', 
+            itemName: '6',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega7,
-            itemName: '7', 
+            itemName: '7',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega8,
-            itemName: '8', 
+            itemName: '8',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega9,
-            itemName: '9', 
+            itemName: '9',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega10,
-            itemName: '10', 
+            itemName: '10',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega11,
-            itemName: '11', 
+            itemName: '11',
             itemPrice: '$'
         },
         {
             itemAddress: potteryImega12,
-            itemName: '12', 
+            itemName: '12',
             itemPrice: '$'
         }
     ]
     return (
-        <ProdactItems arrayItems={potteryItems} title="دسته بندی ظروف سفالی" pageName='سفالی'/>
+        <>
+            <RouteMarker pageName='سفالی' />
+            <ProdactItems arrayItems={potteryItems} title="دسته بندی ظروف سفالی"  />
+        </>
     )
 }
 

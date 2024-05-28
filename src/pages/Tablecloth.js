@@ -1,4 +1,5 @@
 import React from "react";
+import RouteMarker from "../components/RouteMarker/RouteMarker";
 import ProdactItems from "../components/ProductItems/ProductItems";
 import tableclothImage1 from '../assets/images/tablecloth/tablecloth-1.jpg';
 import tableclothImage2 from '../assets/images/tablecloth/tablecloth-2.jpg';
@@ -17,67 +18,70 @@ const TableCloth = () => {
     const tableclothItems = [
         {
             itemAddress: tableclothImage1,
-            itemName: '1', 
+            itemName: '1',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage2,
-            itemName: '2', 
+            itemName: '2',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage3,
-            itemName: '3', 
+            itemName: '3',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage4,
-            itemName: '4', 
+            itemName: '4',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage5,
-            itemName: '5', 
+            itemName: '5',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage6,
-            itemName: '6', 
+            itemName: '6',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage7,
-            itemName: '7', 
+            itemName: '7',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage8,
-            itemName: '8', 
+            itemName: '8',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage9,
-            itemName: '9', 
+            itemName: '9',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage10,
-            itemName: '10', 
+            itemName: '10',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage11,
-            itemName: '11', 
+            itemName: '11',
             itemPrice: '$'
         },
         {
             itemAddress: tableclothImage12,
-            itemName: '12', 
+            itemName: '12',
             itemPrice: '$'
         }
     ]
     return (
-        <ProdactItems arrayItems={tableclothItems}  title="دسته بندی رومیزی" pageName='رومیزی'/>
+        <>
+            <RouteMarker pageName='رومیزی' />
+            <ProdactItems arrayItems={tableclothItems} title="دسته بندی رومیزی"  />
+        </>
     )
 }
 

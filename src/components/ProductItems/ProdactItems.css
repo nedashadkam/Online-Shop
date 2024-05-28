@@ -1,8 +1,8 @@
  .candle-page-container {
-     margin-top: 110px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
 
  .candle-items-box {
@@ -12,11 +12,5 @@
      display: flex;
      flex-flow: row-reverse wrap;
      justify-content: center;
-
- }
-
- .route-marker {
-     align-self: end;
-     margin: 10px;
 
  }

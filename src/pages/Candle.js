@@ -1,4 +1,5 @@
 import React from "react";
+import RouteMarker from "../components/RouteMarker/RouteMarker";
 import candleImage1 from '../assets/images/candle/candle-1.jpg';
 import candleImage2 from '../assets/images/candle/candle-2.jpg';
 import candleImage3 from '../assets/images/candle/candle-3.jpg';
@@ -77,7 +78,10 @@ const Candle = () => {
         }
     ]
     return (
-        <ProdactItems arrayItems={candleItems} title='دسته بندی شمع ها' pageName='شمع'/>
+        <>
+            <RouteMarker pageName=' شمع' />
+            <ProdactItems arrayItems={candleItems} title='دسته بندی شمع ها' />
+        </>
     )
 }
 

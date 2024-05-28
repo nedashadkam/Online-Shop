@@ -1,4 +1,5 @@
 import React from "react";
+import RouteMarker from "../components/RouteMarker/RouteMarker";
 import ProdactItems from "../components/ProductItems/ProductItems";
 import woodenImage1 from '../assets/images/wooden/wooden-1.jpg';
 import woodenImage2 from '../assets/images/wooden/wooden-2.webp';
@@ -17,67 +18,70 @@ const Wooden = () => {
     const woodenItems = [
         {
             itemAddress: woodenImage1,
-            itemName: '1', 
+            itemName: '1',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage2,
-            itemName: '2', 
+            itemName: '2',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage3,
-            itemName: '3', 
+            itemName: '3',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage4,
-            itemName: '4', 
+            itemName: '4',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage5,
-            itemName: '5', 
+            itemName: '5',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage6,
-            itemName: '6', 
+            itemName: '6',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage7,
-            itemName: '7', 
+            itemName: '7',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage8,
-            itemName: '8', 
+            itemName: '8',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage9,
-            itemName: '9', 
+            itemName: '9',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage10,
-            itemName: '10', 
+            itemName: '10',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage11,
-            itemName: '11', 
+            itemName: '11',
             itemPrice: '$'
         },
         {
             itemAddress: woodenImage12,
-            itemName: '12', 
+            itemName: '12',
             itemPrice: '$'
         }
     ]
     return (
-        <ProdactItems arrayItems={woodenItems} title="دسته بندی ظروف چوبی" pageName='چوبی'/>
+        <>
+            <RouteMarker pageName='چوبی' />
+            <ProdactItems arrayItems={woodenItems} title="دسته بندی ظروف چوبی"  />
+        </>
     )
 }
 
