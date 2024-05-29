@@ -1,5 +1,6 @@
 import React from "react";
 import RouteMarker from "../components/RouteMarker/RouteMarker";
+import Footer from "../components/Footer/Footer";
 import ProdactItems from "../components/ProductItems/ProductItems";
 import ceramicImage1 from '../assets/images/ceramic/ceramic-1.jpg';
 import ceramicImage2 from '../assets/images/ceramic/ceramic-2.jpg';
@@ -78,10 +79,13 @@ const Ceramic = () => {
         }
     ]
     return (
-        <main>
-            <RouteMarker pageName='سرامیک' />
-            <ProdactItems arrayItems={ceramicItems} title="دسته بندی ظروف سرامیکی"  />
-        </main>
+        <>
+            <main>
+                <RouteMarker pageName='سرامیک' />
+                <ProdactItems arrayItems={ceramicItems} title="دسته بندی ظروف سرامیکی" />
+            </main>
+            <Footer />
+        </>
     )
 }
 

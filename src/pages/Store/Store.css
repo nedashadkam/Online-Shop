@@ -21,13 +21,12 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid #445778;
-    /* outline: 6px dotted #8c0048; */
-    box-shadow: 2px 2px 3px 2px gray;
+    border: 2px solid #44577830;
+    box-shadow: 6px 5px 7px -4px #cfcfcf;
     padding: 10px;
     width: 90px;
     height: 90px;
     margin: 15px;
-    border-radius: 50%;
+    border-radius: 20%;
     background-color: beige;
 }

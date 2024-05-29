@@ -17,7 +17,7 @@
 
 
  .line {
-     border-bottom: 1px solid gray;
+     border-bottom: 1px solid #c7c5c5;
      display: inline-block;
      width: 27em;
      vertical-align: middle;
@@ -30,57 +30,57 @@
  }
 
 
-@media all and (max-width: 1400px) {
-    .line {
-        width: 20em;
-    }
+ @media all and (max-width: 1400px) {
+     .line {
+         width: 20em;
+     }
 
-    .title {
-        font-size: 22px;
-    }
-}
-
-
-@media all and (max-width: 1200px) {
-    .line {
-        width: 18em;
-    }
-
-    .title {
-        font-size: 22px;
-    }
-}
+     .title {
+         font-size: 22px;
+     }
+ }
 
 
-@media all and (max-width: 1000px) {
-    .line {
-        width: 15em;
-    }
+ @media all and (max-width: 1200px) {
+     .line {
+         width: 18em;
+     }
 
-    .title {
-        font-size: 20px;
-    }
-}
-
-
-
-@media all and (max-width: 960px) {
-    .line {
-        width: 12em;
-    }
-
-    .title {
-        font-size: 20px;
-    }
-}
+     .title {
+         font-size: 22px;
+     }
+ }
 
 
-@media all and (max-width: 700px) {
-    .line {
-        width: 8em;
-    }
+ @media all and (max-width: 1000px) {
+     .line {
+         width: 15em;
+     }
 
-    .title {
-        font-size: 18px;
-    }
-}
+     .title {
+         font-size: 20px;
+     }
+ }
+
+
+
+ @media all and (max-width: 960px) {
+     .line {
+         width: 12em;
+     }
+
+     .title {
+         font-size: 20px;
+     }
+ }
+
+
+ @media all and (max-width: 700px) {
+     .line {
+         width: 8em;
+     }
+
+     .title {
+         font-size: 18px;
+     }
+ }

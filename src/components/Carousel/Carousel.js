@@ -35,8 +35,8 @@ const Carousel = () => {
 
     return (
         <div className="carousel-container" style={{backgroundImage:`url(${img})`}}>
-             <span className="material-icons left-icon" onClick={decrease}  >arrow_back_ios</span>
-            <span className="material-icons right-icon" onClick={increase} >arrow_forward_ios</span>
+             <i className="material-icons left-icon" onClick={decrease}  >arrow_back_ios</i>
+            <i className="material-icons right-icon" onClick={increase} >arrow_forward_ios</i>
          </div>
     )
 }

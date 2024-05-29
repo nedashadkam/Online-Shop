@@ -1,5 +1,6 @@
 import React from "react";
 import RouteMarker from "../components/RouteMarker/RouteMarker";
+import Footer from "../components/Footer/Footer";
 import candleImage1 from '../assets/images/candle/candle-1.jpg';
 import candleImage2 from '../assets/images/candle/candle-2.jpg';
 import candleImage3 from '../assets/images/candle/candle-3.jpg';
@@ -78,10 +79,14 @@ const Candle = () => {
         }
     ]
     return (
-        <main>
-            <RouteMarker pageName=' شمع' />
-            <ProdactItems arrayItems={candleItems} title='دسته بندی شمع ها' />
-        </main>
+        <>
+            <main>
+                <RouteMarker pageName=' شمع' />
+                <ProdactItems arrayItems={candleItems} title='دسته بندی شمع ها' />
+                <Footer />
+            </main>
+            <Footer />
+        </>
     )
 }
 

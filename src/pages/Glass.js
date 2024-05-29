@@ -1,5 +1,6 @@
 import React from "react";
 import ProdactItems from "../components/ProductItems/ProductItems";
+import Footer from "../components/Footer/Footer";
 import RouteMarker from "../components/RouteMarker/RouteMarker";
 import glassImega1 from '../assets/images/glass/glass-1.jpg';
 import glassImega2 from '../assets/images/glass/glass-2.jpeg';
@@ -78,10 +79,13 @@ const Glass = () => {
         }
     ]
     return (
-        <main>
-            <RouteMarker pageName='شیشه ای' />
-            <ProdactItems arrayItems={glassItems} title="دسته بندی ظروف شیشه ای" />
-        </main>
+        <>
+            <main>
+                <RouteMarker pageName='شیشه ای' />
+                <ProdactItems arrayItems={glassItems} title="دسته بندی ظروف شیشه ای" />
+                <Footer />
+            </main>
+        </>
     )
 }
 

@@ -1,14 +1,17 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    height: 97vh;
+    height: 90vh;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: 100% 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.carousel-container span {
+.carousel-container i {
     background-color: #a19d9d;
     padding: 5px;
     display: inline-flex;

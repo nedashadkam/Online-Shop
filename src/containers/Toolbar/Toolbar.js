@@ -15,6 +15,21 @@ const Toolbar = () => {
     function modalClosed() {
         setShowModal(false);
     }
+
+    const modalStyle = {
+        backgroundColor: 'rgb(248, 248, 248)',
+        position: 'fixed',
+        zIndex: '1000',
+        boxSizing: 'border-box',
+        width: '24%',
+        height: 'auto',
+        padding: '20px',
+        left: '38%',
+        top: '25%',
+        border: '1px solid rgb(167, 167, 167)',
+        boxShadow: 'rgb(59 59 59) 0px 0px 35px 3px',
+        borderRadius: '10px',
+    }
     return (
         <>
             <header className="toolbar">
@@ -23,7 +38,7 @@ const Toolbar = () => {
                         <Button btnStyle="btn-style" clicked={show} >
                             ورود | عضویت
                         </Button>
-                        <span className="material-icons"> shopping_basket </span>
+                        <i className="material-icons"> shopping_basket </i>
                     </div>
                     <Logo />
                 </div>
@@ -39,7 +54,7 @@ const Toolbar = () => {
                 </nav>
             </header>
             {
-                showModal ? <Modal modalClosed={modalClosed}> <SignIn /> </Modal> : null
+                showModal ? <Modal modalStyle={modalStyle} modalClosed={modalClosed}> <SignIn /> </Modal> : null
             }
         </>
     )

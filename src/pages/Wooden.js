@@ -1,5 +1,6 @@
 import React from "react";
 import RouteMarker from "../components/RouteMarker/RouteMarker";
+import Footer from "../components/Footer/Footer";
 import ProdactItems from "../components/ProductItems/ProductItems";
 import woodenImage1 from '../assets/images/wooden/wooden-1.jpg';
 import woodenImage2 from '../assets/images/wooden/wooden-2.webp';
@@ -13,6 +14,7 @@ import woodenImage9 from '../assets/images/wooden/wooden-9.jpg';
 import woodenImage10 from '../assets/images/wooden/wooden-10.jpg';
 import woodenImage11 from '../assets/images/wooden/wooden-11.jpg';
 import woodenImage12 from '../assets/images/wooden/wooden-12.jpg';
+
 
 const Wooden = () => {
     const woodenItems = [
@@ -78,10 +80,13 @@ const Wooden = () => {
         }
     ]
     return (
-        <main>
-            <RouteMarker pageName='چوبی' />
-            <ProdactItems arrayItems={woodenItems} title="دسته بندی ظروف چوبی" />
-        </main>
+        <>
+            <main>
+                <RouteMarker pageName='چوبی' />
+                <ProdactItems arrayItems={woodenItems} title="دسته بندی ظروف چوبی" />
+            </main>
+            <Footer />
+        </>
     )
 }
 

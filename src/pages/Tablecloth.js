@@ -1,6 +1,7 @@
 import React from "react";
 import RouteMarker from "../components/RouteMarker/RouteMarker";
 import ProdactItems from "../components/ProductItems/ProductItems";
+import Footer from "../components/Footer/Footer";
 import tableclothImage1 from '../assets/images/tablecloth/tablecloth-1.jpg';
 import tableclothImage2 from '../assets/images/tablecloth/tablecloth-2.jpg';
 import tableclothImage3 from '../assets/images/tablecloth/tablecloth-3.jpg';
@@ -13,6 +14,7 @@ import tableclothImage9 from '../assets/images/tablecloth/tablecloth-9.jpg';
 import tableclothImage10 from '../assets/images/tablecloth/tablecloth-10.jpg';
 import tableclothImage11 from '../assets/images/tablecloth/tablecloth-11.jpg';
 import tableclothImage12 from '../assets/images/tablecloth/tablecloth-12.jpg';
+
 
 const TableCloth = () => {
     const tableclothItems = [
@@ -78,10 +80,13 @@ const TableCloth = () => {
         }
     ]
     return (
-        <main>
-            <RouteMarker pageName='رومیزی' />
-            <ProdactItems arrayItems={tableclothItems} title="دسته بندی رومیزی"  />
-        </main>
+        <>
+            <main>
+                <RouteMarker pageName='رومیزی' />
+                <ProdactItems arrayItems={tableclothItems} title="دسته بندی رومیزی" />
+            </main>
+            <Footer />
+        </>
     )
 }
 
