@@ -1,6 +1,8 @@
 import React from "react";
 import RouteMarker from "../components/RouteMarker/RouteMarker";
+import ProdactItems from "../components/ProductItems/ProductItems";
 import Footer from "../components/Footer/Footer";
+import BackToTop from "../components/BackToTop/BackToTop";
 import candleImage1 from '../assets/images/candle/candle-1.jpg';
 import candleImage2 from '../assets/images/candle/candle-2.jpg';
 import candleImage3 from '../assets/images/candle/candle-3.jpg';
@@ -13,7 +15,7 @@ import candleImage9 from '../assets/images/candle/candle-9.jpg';
 import candleImage10 from '../assets/images/candle/candle-10.jpg';
 import candleImage11 from '../assets/images/candle/candle-11.jpg';
 import candleImage12 from '../assets/images/candle/candle-12.jpg';
-import ProdactItems from "../components/ProductItems/ProductItems";
+ 
 
 const Candle = () => {
     const candleItems = [
@@ -83,9 +85,9 @@ const Candle = () => {
             <main>
                 <RouteMarker pageName=' شمع' />
                 <ProdactItems arrayItems={candleItems} title='دسته بندی شمع ها' />
-                <Footer />
             </main>
             <Footer />
+            <BackToTop />
         </>
     )
 }

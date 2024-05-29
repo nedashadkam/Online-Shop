@@ -4,6 +4,7 @@ import MenuItems from "../../components/MenuItems/MenuItems";
 import MenuItem from "../../components/MenuItem/MenuItem";
 import Suggested from "../../components/Suggested/Suggested";
 import Footer from "../../components/Footer/Footer";
+import BackToTop from "../../components/BackToTop/BackToTop";
 
 const Store = () => {
     const menuItemStyle = {
@@ -32,6 +33,7 @@ const Store = () => {
                 <Suggested />
             </main>
             <Footer />
+            <BackToTop />
         </>
     )
 }

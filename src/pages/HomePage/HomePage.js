@@ -3,6 +3,7 @@ import './HomePage.css';
 import Footer from "../../components/Footer/Footer";
 import Suggested from "../../components/Suggested/Suggested";
 import Carousel from "../../components/Carousel/Carousel";
+import BackToTop from "../../components/BackToTop/BackToTop";
 
 const HomePage = () => {
     return (
@@ -12,6 +13,7 @@ const HomePage = () => {
                 <Suggested />
             </main>
             <Footer />
+            <BackToTop/>
         </>
     )
 }

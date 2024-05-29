@@ -2,6 +2,7 @@ import React from "react";
 import RouteMarker from "../components/RouteMarker/RouteMarker";
 import ProdactItems from "../components/ProductItems/ProductItems";
 import Footer from "../components/Footer/Footer";
+import BackToTop from "../components/BackToTop/BackToTop";
 import tableclothImage1 from '../assets/images/tablecloth/tablecloth-1.jpg';
 import tableclothImage2 from '../assets/images/tablecloth/tablecloth-2.jpg';
 import tableclothImage3 from '../assets/images/tablecloth/tablecloth-3.jpg';
@@ -86,6 +87,7 @@ const TableCloth = () => {
                 <ProdactItems arrayItems={tableclothItems} title="دسته بندی رومیزی" />
             </main>
             <Footer />
+            <BackToTop />
         </>
     )
 }

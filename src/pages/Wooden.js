@@ -1,7 +1,8 @@
 import React from "react";
 import RouteMarker from "../components/RouteMarker/RouteMarker";
-import Footer from "../components/Footer/Footer";
 import ProdactItems from "../components/ProductItems/ProductItems";
+import Footer from "../components/Footer/Footer";
+import BackToTop from "../components/BackToTop/BackToTop";
 import woodenImage1 from '../assets/images/wooden/wooden-1.jpg';
 import woodenImage2 from '../assets/images/wooden/wooden-2.webp';
 import woodenImage3 from '../assets/images/wooden/wooden-3.jpg';
@@ -86,6 +87,7 @@ const Wooden = () => {
                 <ProdactItems arrayItems={woodenItems} title="دسته بندی ظروف چوبی" />
             </main>
             <Footer />
+            <BackToTop />
         </>
     )
 }

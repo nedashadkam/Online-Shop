@@ -1,7 +1,8 @@
 import React from "react";
 import RouteMarker from "../components/RouteMarker/RouteMarker";
-import Footer from "../components/Footer/Footer";
 import ProdactItems from "../components/ProductItems/ProductItems";
+import Footer from "../components/Footer/Footer";
+import BackToTop from "../components/BackToTop/BackToTop";
 import potteryImega1 from '../assets/images/pottery/pottery-1.jpg';
 import potteryImega2 from '../assets/images/pottery/pottery-2.jpg';
 import potteryImega3 from '../assets/images/pottery/pottery-3.jpg';
@@ -85,6 +86,7 @@ const Pottery = () => {
                 <ProdactItems arrayItems={potteryItems} title="دسته بندی ظروف سفالی" />
             </main>
             <Footer />
+            <BackToTop />
         </>
     )
 }
