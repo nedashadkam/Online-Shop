@@ -20,63 +20,75 @@ const Pottery = () => {
     const potteryItems = [
         {
             itemAddress: potteryImega1,
-            itemName: '1',
-            itemPrice: '$'
+            itemName: 'سرویس سفالی کد 115',
+            itemPrice: '210 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega2,
-            itemName: '2',
-            itemPrice: '$'
+            itemName: 'ست سفالی کد 650',
+            itemPrice: '200 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega3,
-            itemName: '3',
-            itemPrice: '$'
+            itemName: 'ست سفالی کد 661',
+            itemPrice: '210 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega4,
-            itemName: '4',
-            itemPrice: '$'
+            itemName: 'دیوار کوب کد 218',
+            itemPrice: '70 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega5,
-            itemName: '5',
-            itemPrice: '$'
+            itemName: 'دیوار کوب دوتایی کد 662',
+            itemPrice: '140 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega6,
-            itemName: '6',
-            itemPrice: '$'
+            itemName: 'قندان سفالی کد 663',
+            itemPrice: '80 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega7,
-            itemName: '7',
-            itemPrice: '$'
+            itemName: 'ست سفالی کد 664',
+            itemPrice: '190 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega8,
-            itemName: '8',
-            itemPrice: '$'
+            itemName: 'دیوارکوب کد 217',
+            itemPrice: '60 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega9,
-            itemName: '9',
-            itemPrice: '$'
+            itemName: 'ظرف دیزی کد 665',
+            itemPrice: '80 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega10,
-            itemName: '10',
-            itemPrice: '$'
+            itemName: 'قندان سفالی کد 667',
+            itemPrice: '90 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega11,
-            itemName: '11',
-            itemPrice: '$'
+            itemName: 'قندان سفالی کد 668',
+            itemPrice: '100 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: potteryImega12,
-            itemName: '12',
-            itemPrice: '$'
+            itemName: 'ست سفالی کد 680',
+            itemPrice: '260 000 تومان',
+            itemInformation: 'image information'
         }
     ]
     return (

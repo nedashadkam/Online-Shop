@@ -20,63 +20,75 @@ const Glass = () => {
     const glassItems = [
         {
             itemAddress: glassImega1,
-            itemName: '1',
-            itemPrice: '$'
+            itemName: 'ظرف استوانه ای کد 501',
+            itemPrice: '60 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega2,
-            itemName: '2',
-            itemPrice: '$'
+            itemName: 'گلدان شیشه ای کد 213',
+            itemPrice: '50 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega3,
-            itemName: '3',
-            itemPrice: '$'
+            itemName: 'گلدان شیشه ای کد 502',
+            itemPrice: ' 80 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega4,
-            itemName: '4',
-            itemPrice: '$'
+            itemName: 'گلدان شیشه ای کد 503',
+            itemPrice: '60 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega5,
-            itemName: '5',
-            itemPrice: '$'
+            itemName: 'تنگ شیشه ای کد 504',
+            itemPrice: '200 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega6,
-            itemName: '6',
-            itemPrice: '$'
+            itemName: 'ست گلدان رنگی کد 505',
+            itemPrice: '300 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega7,
-            itemName: '7',
-            itemPrice: '$'
+            itemName: 'تنگ شیشه ای کد 506',
+            itemPrice: '90 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega8,
-            itemName: '8',
-            itemPrice: '$'
+            itemName: 'تنگ شیشه ای کد 507',
+            itemPrice: '150 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega9,
-            itemName: '9',
-            itemPrice: '$'
+            itemName: 'ست گلدان کد 508',
+            itemPrice: '305 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega10,
-            itemName: '10',
-            itemPrice: '$'
+            itemName: 'گلدان شیشه 117',
+            itemPrice: '330 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega11,
-            itemName: '11',
-            itemPrice: '$'
+            itemName: 'تنگ  و لیوان شیشه ای کد 509',
+            itemPrice: '200 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: glassImega12,
-            itemName: '12',
-            itemPrice: '$'
+            itemName: 'گلدان شیشه ای کد 510',
+            itemPrice: '90 000 تومان ',
+            itemInformation: 'image information'
         }
     ]
     return (

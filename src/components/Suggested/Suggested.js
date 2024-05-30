@@ -22,84 +22,100 @@ const Suggested = () => {
         {
             itemAddress: suggestedItem1,
             itemName: 'شمع دو عددی کد 111',
-            itemPrice: '$'
+            itemPrice: '82 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: suggestedItem2,
             itemName: 'شمع طرح صدف کد 112',
-            itemPrice: '56000 تومان'
+            itemPrice: '56000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: suggestedItem3,
             itemName: 'سرویس طرح قارچ کد 113',
-            itemPrice: '350 000 تومان'
+            itemPrice: '350 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: suggestedItem4,
             itemName: 'کاسه دو عددی کد 114',
-            itemPrice: '106000 تومان'
+            itemPrice: '106000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: suggestedItem5,
             itemName: 'سرویس سفالی کد 115',
-            itemPrice: '210 000 تومان'
+            itemPrice: '210 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: suggestedItem6,
             itemName: 'ست چوبی کد 116',
-            itemPrice: '300 000 تومان'
+            itemPrice: '300 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: suggestedItem7,
             itemName: 'گلدان شیشه ای کد 117',
-            itemPrice: '330 000 تومان'
+            itemPrice: '330 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: suggestedItem8,
             itemName: 'رومیزی کد 118',
-            itemPrice: '100 000 تومان'
+            itemPrice: '100 000 تومان',
+            itemInformation: 'image information'
         }
     ]
     const newItem = [
         {
             itemAddress: newItem1,
             itemName: 'شمع قلمی کد 211',
-            itemPrice: '11 000 تومان'
+            itemPrice: '11 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: newItem2,
             itemName: 'ظرف چوبی کد 212',
-            itemPrice: '58000 تومان'
+            itemPrice: '58000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: newItem3,
             itemName: '   گلدان شیشه ای کد 213 ',
-            itemPrice: '50 000 تومان'
+            itemPrice: '50 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: newItem4,
-            itemName: ' شمه پیچی کد 214   ',
-            itemPrice: '6000 تومان'
+            itemName: ' شمع پیچی کد 214   ',
+            itemPrice: '6000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: newItem5,
             itemName: 'رومیزی کد 215',
-            itemPrice: '200 000 تومان'
+            itemPrice: '200 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: newItem6,
             itemName: ' کاسه چهار عددی کد 216',
-            itemPrice: '370 000 تومان'
+            itemPrice: '370 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: newItem7,
             itemName: 'دیوار کوب کد 217',
-            itemPrice: '60 000 تومان'
+            itemPrice: '60 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: newItem8,
             itemName: ' دیوار کوب کد 218',
-            itemPrice: '70 000 تومان'
+            itemPrice: '70 000 تومان',
+            itemInformation: 'image information'
         }
     ]
     return (

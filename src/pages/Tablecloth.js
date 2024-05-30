@@ -21,63 +21,75 @@ const TableCloth = () => {
     const tableclothItems = [
         {
             itemAddress: tableclothImage1,
-            itemName: '1',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 610',
+            itemPrice: '110 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage2,
-            itemName: '2',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 611',
+            itemPrice: '120 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage3,
-            itemName: '3',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 118',
+            itemPrice: '100 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage4,
-            itemName: '4',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 612',
+            itemPrice: '80 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage5,
-            itemName: '5',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 215',
+            itemPrice: '200 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage6,
-            itemName: '6',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 613',
+            itemPrice: '210 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage7,
-            itemName: '7',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 614',
+            itemPrice: '150 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage8,
-            itemName: '8',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 615',
+            itemPrice: '$',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage9,
-            itemName: '9',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 616',
+            itemPrice: '140 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage10,
-            itemName: '10',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 617',
+            itemPrice: '160 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage11,
-            itemName: '11',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 618',
+            itemPrice: '150 000 نومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: tableclothImage12,
-            itemName: '12',
-            itemPrice: '$'
+            itemName: 'رومیزی کد 619',
+            itemPrice: '200 000 تومان',
+            itemInformation: 'image information'
         }
     ]
     return (

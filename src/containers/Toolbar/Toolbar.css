@@ -28,7 +28,7 @@
 .toolbar > nav span {
     color: #445778;
     padding: 0 10px;
-   
+   font-weight: bold;
 }
  header i {
     padding-left: 20px;

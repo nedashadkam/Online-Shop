@@ -21,63 +21,75 @@ const Candle = () => {
     const candleItems = [
         {
             itemAddress: candleImage1,
-            itemName: '1',
-            itemPrice: '$'
+            itemName: 'شمع دو عددی کد 111',
+            itemPrice: '82 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage2,
-            itemName: '2',
-            itemPrice: '$'
+            itemName: 'شمع طرح صدف کد 112',
+            itemPrice: '56 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage3,
-            itemName: '3',
-            itemPrice: '$'
+            itemName: 'شمع استوانه ای کد 301',
+            itemPrice: '54 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage4,
-            itemName: '4',
-            itemPrice: '$'
+            itemName: 'شمع پیچی کد 214',
+            itemPrice: '60 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage5,
-            itemName: '5',
-            itemPrice: '$'
+            itemName: 'شمع استوانه ای باریک کد 302',
+            itemPrice: '24 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage6,
-            itemName: '6',
-            itemPrice: '$'
+            itemName: 'شمع طرح سگ کد 303',
+            itemPrice: '112 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage7,
-            itemName: '7',
-            itemPrice: '$'
+            itemName: 'شمع دو عددی کد 304',
+            itemPrice: '85 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage8,
-            itemName: '8',
-            itemPrice: '$'
+            itemName: 'ست شمع کد 305',
+            itemPrice: '482 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage9,
-            itemName: '9',
-            itemPrice: '$'
+            itemName: 'ست شمع کد 306',
+            itemPrice: '510 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage10,
-            itemName: '10',
-            itemPrice: '$'
+            itemName: 'ست شمع ابری کد 307',
+            itemPrice: '68 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage11,
-            itemName: '11',
-            itemPrice: '$'
+            itemName: 'شمع پیچی کد 308',
+            itemPrice: '95 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: candleImage12,
-            itemName: '12',
-            itemPrice: '$'
+            itemName: 'شمع استوانه ای  کد 309',
+            itemPrice: '84 000 تومان',
+            itemInformation: 'image information'
         }
     ]
     return (

@@ -20,63 +20,75 @@ const Ceramic = () => {
     const ceramicItems = [
         {
             itemAddress: ceramicImage1,
-            itemName: '1',
-            itemPrice: '$'
+            itemName: 'سرویس طرح قارچ کد 113',
+            itemPrice: ' 350 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage2,
-            itemName: '2',
-            itemPrice: '$'
+            itemName: 'کاسه دو عددی کد 114',
+            itemPrice: '106 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage3,
-            itemName: '3',
-            itemPrice: '$'
+            itemName: 'کاسه دو عددی طرح پرنده کد 401',
+            itemPrice: '180 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage4,
-            itemName: '4',
-            itemPrice: '$'
+            itemName: 'ظروف طرح گوزن کد 402',
+            itemPrice: '250 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage5,
-            itemName: '5',
-            itemPrice: '$'
+            itemName: 'ست لیوان رنگی کد 403',
+            itemPrice: '360 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage6,
-            itemName: '6',
-            itemPrice: '$'
+            itemName: 'کاسه چهار عددی کد 216',
+            itemPrice: '370 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage7,
-            itemName: '7',
-            itemPrice: '$'
+            itemName: 'فنجان های سرامیکی کد 404',
+            itemPrice: '200 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage8,
-            itemName: '8',
-            itemPrice: '$'
+            itemName: 'کاسه طرح روباه کد 405',
+            itemPrice: '70 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage9,
-            itemName: '9',
-            itemPrice: '$'
+            itemName: 'ست خرسی کد 406',
+            itemPrice: '312 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage10,
-            itemName: '10',
-            itemPrice: '$'
+            itemName: 'کاسه طرح کاج کد 407',
+            itemPrice: '80 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage11,
-            itemName: '11',
-            itemPrice: '$'
+            itemName: 'ظرف خرسی کد 408',
+            itemPrice: '90 000 تومان',
+            itemInformation: 'image information'
         },
         {
             itemAddress: ceramicImage12,
-            itemName: '12',
-            itemPrice: '$'
+            itemName: 'ست آهو کد 409',
+            itemPrice: '250 000 تومان',
+            itemInformation: 'image information'
         }
     ]
     return (
