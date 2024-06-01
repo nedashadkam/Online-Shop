@@ -6,36 +6,96 @@
     z-index: 100;
 }
 
-.toolbar > div {
+.toolbar>div {
     background-color: #8c0048;
     height: 70px;
     width: 100%;
     box-sizing: border-box;
-    padding:0 30px;
+    padding: 0 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.toolbar > nav {
+.toolbar>nav {
     background-color: rgb(248, 248, 248);
     height: 40px;
     width: 100%;
     border-bottom: 1px solid #efefef
 }
 
-.toolbar > nav span {
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
+}
+
+.toolbar>nav span {
     color: #445778;
     padding: 0 10px;
-   font-weight: bold;
+    font-weight: bold;
 }
- header i {
+
+header i {
     padding-left: 20px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    
+
+}
+
+.hamberger-menu {
+    display: none;
+    position: relative;
+}
+
+.hamberger-menu-items {
+    position: absolute;
+    display: flex;
+    background-color: rgb(248, 248, 248);
+    border-left: 1px solid #e1dddd;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 180px;
+    height: 100vh;
+    right: 0px;
+    padding: 20px;
+    z-index: 105;
+    transition: all 0.3s linear;
+}
+
+.hamberger-menu-items ul {
+    width: 100%;
+    margin-block: 0px;
+    margin: 7px 20px;
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.hamberger-menu-items ul span, 
+.hamberger-menu-items ul a {
+    padding: 10px 0;
+}
+
+@media all and (max-width: 1000px) {
+    .toolbar>nav {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .hamberger-menu {
+        display:flex ;
+    }
 }
 
 
@@ -46,9 +106,9 @@
     font-style: normal;
     font-weight: 400;
     src: url('../../assets/icons/flUhRq6tzZclQEJ-Vdg-IuiaDsNc\ \(1\).woff2') format('woff2');
-  }
-  
-  .material-icons {
+}
+
+.material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -62,4 +122,4 @@
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
-  }
+}

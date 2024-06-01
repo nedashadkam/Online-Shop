@@ -5,7 +5,7 @@ const Modal = (props) => {
     
     return (
         <>
-            <Backdrop modalClosed={props.modalClosed} />
+            <Backdrop Closed={props.Closed} />
             <div style={props.modalStyle}  >{props.children}</div>
         </>
     )

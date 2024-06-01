@@ -6,7 +6,7 @@ import './Backdrop.css';
 
 const Backdrop = (props) => {
     return (
-        <div className="backdrop-style" onClick={props.modalClosed} ></div>
+        <div className="backdrop-style" onClick={props.Closed} ></div>
     )
 }
 export default Backdrop;

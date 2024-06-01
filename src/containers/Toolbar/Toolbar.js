@@ -6,6 +6,7 @@ import MenuItems from "../../components/MenuItems/MenuItems";
 import MenuItem from '../../components/MenuItem/MenuItem';
 import Modal from "../../components/Modal/Modal";
 import SignIn from "../../components/SignIn/SignIn";
+import Backdrop from "../../components/Backdrop/Backdrop";
 
 const Toolbar = () => {
     const [showModal, setShowModal] = useState(false);
@@ -30,6 +31,13 @@ const Toolbar = () => {
         boxShadow: 'rgb(59 59 59) 0px 0px 35px 3px',
         borderRadius: '10px',
     }
+    const [showHamberger, setShowHamberger] = useState(false);
+    function showHambergerMenu () {
+        setShowHamberger(true)
+    }
+    function closeHambergerMenu () {
+        setShowHamberger(false)
+    }
     return (
         <>
             <header className="toolbar">
@@ -43,7 +51,7 @@ const Toolbar = () => {
                     <Logo />
                 </div>
                 <nav>
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+                    <div className="nav-items" >
                         <MenuItems>
                             <MenuItem link='/' > صفحه اصلی </MenuItem>
                             <MenuItem link='/store' >فروشگاه </MenuItem>
@@ -51,10 +59,24 @@ const Toolbar = () => {
                             <span>تماس با ما </span>
                         </MenuItems>
                     </div>
+                    <div className="hamberger-menu">
+                    <Button btnStyle='hamberger-btn' clicked={showHambergerMenu} >☰</Button>
+                    <div style={showHamberger? {transform: 'translateX(0)'} : {transform: 'translateX(100vw)'}} className="hamberger-menu-items">
+                    <MenuItems>
+                            <MenuItem link='/' > صفحه اصلی </MenuItem>
+                            <MenuItem link='/store' >فروشگاه </MenuItem>
+                            <span>درباره ما </span>
+                            <span>تماس با ما </span>
+                        </MenuItems>
+                    </div>
+                    </div>
+                    <div style={showHamberger? {display: 'block'} : {display: 'none'}}>
+                        <Backdrop Closed={closeHambergerMenu} />
+                    </div>
                 </nav>
             </header>
             {
-                showModal ? <Modal modalStyle={modalStyle} modalClosed={modalClosed}> <SignIn /> </Modal> : null
+                showModal ? <Modal modalStyle={modalStyle} Closed={modalClosed}> <SignIn /> </Modal> : null
             }
         </>
     )
