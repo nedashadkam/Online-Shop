@@ -95,7 +95,7 @@ const Pottery = () => {
         <>
             <main>
                 <RouteMarker pageName='سفالی' />
-                <ProdactItems arrayItems={potteryItems} title="دسته بندی ظروف سفالی" />
+                <ProdactItems showSearchBar={true} arrayItems={potteryItems} title="دسته بندی ظروف سفالی" />
             </main>
             <Footer />
             <BackToTop />

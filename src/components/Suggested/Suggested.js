@@ -120,8 +120,8 @@ const Suggested = () => {
     ]
     return (
         <>
-        <ProdactItems arrayItems={SuggestedItem} title='پیشنهادی ' />
-        <ProdactItems arrayItems={newItem} title='جدیدترین ها ' />
+        <ProdactItems showSearchBar={false} arrayItems={SuggestedItem} title='پیشنهادی ' />
+        <ProdactItems showSearchBar={false} arrayItems={newItem} title='جدیدترین ها ' />
         </>
     )
 }

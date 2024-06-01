@@ -96,7 +96,7 @@ const TableCloth = () => {
         <>
             <main>
                 <RouteMarker pageName='رومیزی' />
-                <ProdactItems arrayItems={tableclothItems} title="دسته بندی رومیزی" />
+                <ProdactItems showSearchBar={true} arrayItems={tableclothItems} title="دسته بندی رومیزی" />
             </main>
             <Footer />
             <BackToTop />

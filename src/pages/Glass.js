@@ -95,7 +95,7 @@ const Glass = () => {
         <>
             <main>
                 <RouteMarker pageName='شیشه ای' />
-                <ProdactItems arrayItems={glassItems} title="دسته بندی ظروف شیشه ای" />
+                <ProdactItems showSearchBar={true} arrayItems={glassItems} title="دسته بندی ظروف شیشه ای" />
             </main>
             <Footer />
             <BackToTop />

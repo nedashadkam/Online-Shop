@@ -37,7 +37,7 @@ const ProdactItem = (props) => {
                 افزودن به سبد خرید
             </Button>
             {
-                showImgModal ? <Modal modalStyle={modalStyle} modalClosed={modalClosed}>
+                showImgModal ? <Modal modalStyle={modalStyle} Closed={modalClosed}>
                     <ImageModalContent modalImgAddress={props.imageAddress} itemInformation={props.itemInformation}/>
                 </Modal> : null
             }

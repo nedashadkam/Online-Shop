@@ -96,7 +96,7 @@ const Wooden = () => {
         <>
             <main>
                 <RouteMarker pageName='چوبی' />
-                <ProdactItems arrayItems={woodenItems} title="دسته بندی ظروف چوبی" />
+                <ProdactItems showSearchBar={true} arrayItems={woodenItems} title="دسته بندی ظروف چوبی" />
             </main>
             <Footer />
             <BackToTop />

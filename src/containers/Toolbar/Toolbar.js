@@ -9,14 +9,20 @@ import SignIn from "../../components/SignIn/SignIn";
 import Backdrop from "../../components/Backdrop/Backdrop";
 
 const Toolbar = () => {
-    const [showModal, setShowModal] = useState(false);
-    function show() {
-        setShowModal(true);
-    }
-    function modalClosed() {
-        setShowModal(false);
+
+    const styles1 = {
+        width: '100%',
+        marginBlock: '0px',
+        margin: '7px 20px',
+        paddingInlineStart: '0px',
     }
 
+    const styles2 = {
+        marginBlockStart: '0',
+        marginBlockEnd: '0',
+        paddingInlineStart: '0'
+    }
+    
     const modalStyle = {
         backgroundColor: 'rgb(248, 248, 248)',
         position: 'fixed',
@@ -31,13 +37,23 @@ const Toolbar = () => {
         boxShadow: 'rgb(59 59 59) 0px 0px 35px 3px',
         borderRadius: '10px',
     }
+
+    const [showModal, setShowModal] = useState(false);
+    function show() {
+        setShowModal(true);
+    }
+    function modalClosed() {
+        setShowModal(false);
+    }
+
     const [showHamberger, setShowHamberger] = useState(false);
-    function showHambergerMenu () {
+    function showHambergerMenu() {
         setShowHamberger(true)
     }
-    function closeHambergerMenu () {
+    function closeHambergerMenu() {
         setShowHamberger(false)
     }
+
     return (
         <>
             <header className="toolbar">
@@ -46,13 +62,18 @@ const Toolbar = () => {
                         <Button btnStyle="btn-style" clicked={show} >
                             ورود | عضویت
                         </Button>
-                        <i className="material-icons"> shopping_basket </i>
+                        <i className="material-icons shop"> shopping_basket </i>
+                        <span className="badge">1</span>
+                        <MenuItems styles={styles2}>
+                            <MenuItem style={{padding:'0px', display: 'flex'}} link='/notification' ><i className="material-icons notif"> notifications </i></MenuItem>
+                        </MenuItems>
+                        <span className="badge">4</span>
                     </div>
                     <Logo />
                 </div>
                 <nav>
                     <div className="nav-items" >
-                        <MenuItems>
+                        <MenuItems styles={styles1}>
                             <MenuItem link='/' > صفحه اصلی </MenuItem>
                             <MenuItem link='/store' >فروشگاه </MenuItem>
                             <span>درباره ما </span>
@@ -60,17 +81,17 @@ const Toolbar = () => {
                         </MenuItems>
                     </div>
                     <div className="hamberger-menu">
-                    <Button btnStyle='hamberger-btn' clicked={showHambergerMenu} >☰</Button>
-                    <div style={showHamberger? {transform: 'translateX(0)'} : {transform: 'translateX(100vw)'}} className="hamberger-menu-items">
-                    <MenuItems>
-                            <MenuItem link='/' > صفحه اصلی </MenuItem>
-                            <MenuItem link='/store' >فروشگاه </MenuItem>
-                            <span>درباره ما </span>
-                            <span>تماس با ما </span>
-                        </MenuItems>
+                        <Button btnStyle='hamberger-btn' clicked={showHambergerMenu} >☰</Button>
+                        <div style={showHamberger ? { transform: 'translateX(0)' } : { transform: 'translateX(100vw)' }} className="hamberger-menu-items">
+                            <MenuItems>
+                                <MenuItem link='/' > صفحه اصلی </MenuItem>
+                                <MenuItem link='/store' >فروشگاه </MenuItem>
+                                <span>درباره ما </span>
+                                <span>تماس با ما </span>
+                            </MenuItems>
+                        </div>
                     </div>
-                    </div>
-                    <div style={showHamberger? {display: 'block'} : {display: 'none'}}>
+                    <div style={showHamberger ? { display: 'block' } : { display: 'none' }}>
                         <Backdrop Closed={closeHambergerMenu} />
                     </div>
                 </nav>

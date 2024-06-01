@@ -1,5 +1,5 @@
  .page-container {
-     margin-top: 40px;
+     margin-top: 0px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -13,6 +13,24 @@
      flex-flow: row-reverse wrap;
      justify-content: center;
 
+ }
+
+ .search-bar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+ }
+
+ .search-ber-filter {
+    text-align: right;
+    width: 80%;
+    /* margin-bottom: 50px; */
+    padding: 10px;
+    border: 1px solid #8080804f;
  }
 
 

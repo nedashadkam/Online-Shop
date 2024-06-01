@@ -10,6 +10,7 @@ import TableCloth from './pages/Tablecloth';
 import Candle from './pages/Candle';
 import Ceramic from './pages/Ceramic';
 import Store from './pages/Store/Store';
+import Notification from './pages/Notification/Notification';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path='/store/candle' element={<Candle />} />
             <Route path='/store/ceramic' element={<Ceramic />} />
             <Route path='/store/tablecloth' element={<TableCloth />} />
+            <Route path='/notification' element={<Notification />} />
             <Route path='*' element={<h1>404</h1>} />
         </Routes>
       </BrowserRouter>

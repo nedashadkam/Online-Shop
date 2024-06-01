@@ -95,7 +95,7 @@ const Ceramic = () => {
         <>
             <main>
                 <RouteMarker pageName='سرامیک' />
-                <ProdactItems arrayItems={ceramicItems} title="دسته بندی ظروف سرامیکی" />
+                <ProdactItems showSearchBar={true} arrayItems={ceramicItems} title="دسته بندی ظروف سرامیکی" />
             </main>
             <Footer />
             <BackToTop />

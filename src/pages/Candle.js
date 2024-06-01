@@ -96,7 +96,7 @@ const Candle = () => {
         <>
             <main>
                 <RouteMarker pageName=' شمع' />
-                <ProdactItems arrayItems={candleItems} title='دسته بندی شمع ها' />
+                <ProdactItems showSearchBar={true} arrayItems={candleItems} title='دسته بندی شمع ها' />
             </main>
             <Footer />
             <BackToTop />
