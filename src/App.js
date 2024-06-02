@@ -27,7 +27,12 @@ function App() {
             <Route path='/store/ceramic' element={<Ceramic />} />
             <Route path='/store/tablecloth' element={<TableCloth />} />
             <Route path='/notification' element={<Notification />} />
-            <Route path='*' element={<h1>404</h1>} />
+            <Route path='*' element={
+              <main>
+                <div className='no-page'>
+                </div>
+              </main>
+            } />
         </Routes>
       </BrowserRouter>
     </div>

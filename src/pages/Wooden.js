@@ -23,73 +23,73 @@ const Wooden = () => {
             itemAddress: woodenImage1,
             itemName: 'ست چوبی کد 116',
             itemPrice: '300 000 تومان',
-            itemInformation: 'image information'
+            itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage2,
             itemName: 'ظرف چوبی کد 212',
             itemPrice: '58 000 تومان',
-            itemInformation: 'image information'
+            itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage3,
             itemName: 'سینی گرد چوبی کد 710',
             itemPrice: '98 000 تومان',
-            itemInformation: 'image information'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage4,
             itemName: 'کاسه چوبی کد 711',
             itemPrice: '100 000 تومان',
-            itemInformation: 'image information'
+            itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage5,
             itemName: 'ست چوبی کد 712',
             itemPrice: '600 000 تومان',
-            itemInformation: 'image information'
+            itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage6,
             itemName: 'ماگ چوبی کد 713',
             itemPrice: '80 000 تومان',
-            itemInformation: 'image information'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage7,
             itemName: 'زیر لیوانی چوبی کد 714 ',
             itemPrice: '160 000 تومان',
-            itemInformation: 'image information'
+            itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage8,
             itemName: 'گلدان چوبی کد 715',
             itemPrice: '200 000 تومان ',
-            itemInformation: 'image information'
+            itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage9,
             itemName: 'سینی چوبی کد 716',
             itemPrice: '98 000 تومان',
-            itemInformation: 'image information'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage10,
             itemName: 'قندان چوبی کد 717',
             itemPrice: '106 000 تومان',
-            itemInformation: 'image information'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage11,
             itemName: 'گلدان چوبی دو عددی کد 718',
             itemPrice: '160 000 تومان',
-            itemInformation: 'image information'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage12,
             itemName: 'قندان چوبی کد 719',
             itemPrice: '180 000 تومان',
-            itemInformation: 'image information'
+            itemInformation: 'اطلاعات محصول'
         }
     ]
     return (

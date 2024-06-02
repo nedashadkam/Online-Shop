@@ -41,6 +41,11 @@
         width: 40%;
         left: 30%;
     }
+
+    .product-item-modal {
+        width: 70%;
+        left: 15%;
+    }
 }
 
 
