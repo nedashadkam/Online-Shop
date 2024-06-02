@@ -5,3 +5,55 @@
     justify-content: center;
     align-items: center;
 }
+
+.main-buttom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: end;
+    margin-top: 40px;
+    width: 60%;
+}
+
+.main-buttom>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.main-buttom img {
+    width: 60%;
+    height: 112px;
+    box-sizing: border-box;
+}
+
+.main-buttom span {
+    padding-top: 10px;
+    font-size: 17px;
+    color: #4c4c4c;
+}
+
+@media all and (max-width: 1000px) {
+    .main-buttom {
+        width: 80%;
+    }
+
+    .main-buttom img {
+        width: 70%;
+        height: 112px;
+    }
+}
+
+
+@media all and (max-width: 700px) {
+    .main-buttom {
+        width: 90%;
+    }
+    .main-buttom > div {
+        padding: 10px ;
+    }
+}
