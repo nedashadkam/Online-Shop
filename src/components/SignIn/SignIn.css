@@ -31,13 +31,13 @@ input:focus {
     color: #686666;
 }
 
-.captcha span {
-    width: 20%;
+.captcha p {
+    width: 65%;
 }
 
 .captcha img {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
     border-radius: 50px;
 }

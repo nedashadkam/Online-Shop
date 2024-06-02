@@ -5,20 +5,20 @@ import Modal from '../Modal/Modal';
 import ImageModalContent from '../ImageModalContent/ImageModalContent';
 
 const ProdactItem = (props) => {
-    const modalStyle = {
-        backgroundColor: 'rgb(248, 248, 248)',
-        position: 'fixed',
-        zIndex: '1000',
-        boxSizing: 'border-box',
-        width: '50%',
-        height: 'auto',
-        padding: '20px',
-        left: '25%',
-        top: '20%',
-        border: '1px solid rgb(167, 167, 167)',
-        boxShadow: 'rgb(59 59 59) 0px 0px 35px 3px',
-        borderRadius: '10px',
-    }
+    // const modalStyle = {
+    //     backgroundColor: 'rgb(248, 248, 248)',
+    //     position: 'fixed',
+    //     zIndex: '1000',
+    //     boxSizing: 'border-box',
+    //     width: '50%',
+    //     height: 'auto',
+    //     padding: '20px',
+    //     left: '25%',
+    //     top: '20%',
+    //     border: '1px solid rgb(167, 167, 167)',
+    //     boxShadow: 'rgb(59 59 59) 0px 0px 35px 3px',
+    //     borderRadius: '10px',
+    // }
     const [showImgModal, setShowImgModal] = useState(false);
     function showModal() {
         setShowImgModal(true)
@@ -37,7 +37,7 @@ const ProdactItem = (props) => {
                 افزودن به سبد خرید
             </Button>
             {
-                showImgModal ? <Modal modalStyle={modalStyle} Closed={modalClosed}>
+                showImgModal ? <Modal modalStyle='product-item-modal' Closed={modalClosed}>
                     <ImageModalContent modalImgAddress={props.imageAddress} itemInformation={props.itemInformation}/>
                 </Modal> : null
             }
