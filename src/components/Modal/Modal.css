@@ -19,10 +19,11 @@
     z-index: 1000;
     box-sizing: border-box;
     width: 50%;
-    height: auto;
+    /* height: auto; */
     padding: 20px;
+    top: 50%;
     left: 25%;
-    top: 20%;
+    transform: translate(0 , -50%);
     border: 1px solid rgb(167, 167, 167);
     box-shadow: rgb(59 59 59) 0px 0px 35px 3px;
     border-radius: 10px;

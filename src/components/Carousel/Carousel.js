@@ -34,13 +34,13 @@ const Carousel = () => {
             setImage(getImageByIndex(currentIndex - 1));
         }
     }
-    let x;
-    if (currentIndex < 5) {
-        x = setInterval(increase, 2000)
-    }
-     if(!currentIndex < 5) {
-        clearInterval(x)
-    }
+    // let x;
+    // if (currentIndex < 5) {
+    //     x = setInterval(increase, 2000)
+    // }
+    //  if(!currentIndex < 5) {
+    //     clearInterval(x)
+    // }
 
     const text = 'فروشگاه آنلاین';
     function writeText() {
