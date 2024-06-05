@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
+    transition:  all 0.5s ease-out;
 }
 
 .carousel-container i {
@@ -32,7 +33,7 @@
 .carousel-text {
     color: #0f2143; 
     font-size:40px;
-    padding-bottom: 300px
+    padding-bottom: 250px
 }
 
 /* 

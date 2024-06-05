@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import './Toolbar.css';
 import Button from "../../components/button/Button";
 import Logo from "../../components/Logo/Logo";
@@ -7,12 +7,18 @@ import MenuItem from '../../components/MenuItem/MenuItem';
 import Modal from "../../components/Modal/Modal";
 import SignIn from "../../components/SignIn/SignIn";
 import Backdrop from "../../components/Backdrop/Backdrop";
+import { Context } from "../Context/NotificationContext";
+
 
 const Toolbar = () => {
 
     const [showLogInModal, setShowLogInModal] = useState(false);
     const [showHamberger, setShowHamberger] = useState(false);
     const [showShoppingBox, setShowShoppingBox] = useState(false);
+    const [showAboutUs, setShowAboutUs] = useState(false);
+    const [showContactUs, setShowContactUs] = useState(false);
+    const notificationsLength = useContext(Context);
+    
 
     const styles1 = {
         width: '100%',
@@ -63,7 +69,7 @@ const Toolbar = () => {
                         <MenuItems styles={styles2}>
                             <MenuItem style={{ padding: '0px', display: 'flex' }} link='/notification' ><i className="material-icons notif"> notifications </i></MenuItem>
                         </MenuItems>
-                        <span className="badge">4</span>
+                        <span className="badge">{notificationsLength.length}</span>
                     </div>
                     <Logo />
                 </div>
@@ -73,8 +79,14 @@ const Toolbar = () => {
                         <MenuItems styles={styles1}>
                             <MenuItem link='/' > صفحه اصلی </MenuItem>
                             <MenuItem link='/store' >فروشگاه </MenuItem>
-                            <span>درباره ما </span>
-                            <span>تماس با ما </span>
+                            <span onClick={() => setShowAboutUs(!showAboutUs)}>درباره ما </span>
+                            <span onClick={() => setShowContactUs(!showContactUs)}>تماس با ما </span>
+                            {
+                                showAboutUs ? <div className="about-us">درباره ما</div> : null
+                            }
+                            {
+                                showContactUs ? <div className="contact-us">تماس با ما</div> : null
+                            }
                         </MenuItems>
                     </div>
 
@@ -85,8 +97,6 @@ const Toolbar = () => {
                             <MenuItems>
                                 <MenuItem link='/' > صفحه اصلی </MenuItem>
                                 <MenuItem link='/store' >فروشگاه </MenuItem>
-                                <span>درباره ما </span>
-                                <span>تماس با ما </span>
                             </MenuItems>
                         </div>
                     </div>
@@ -98,7 +108,6 @@ const Toolbar = () => {
             {
                 showLogInModal ? <Modal modalStyle='log-in-modal' Closed={closeLoginModal}> <SignIn /> </Modal> : null
             }
-
             {
                 showShoppingBox ? <Modal modalStyle='log-in-modal' Closed={closeShoppingBoxModal}> <h1>shopping box</h1> </Modal> : null
             }

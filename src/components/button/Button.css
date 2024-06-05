@@ -37,6 +37,19 @@
     cursor: pointer;
 }
 
+.show-notif {
+    font-family: 'yekan';
+    background-color: #2db193;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid #2db193;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 100;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 
 
 @font-face {

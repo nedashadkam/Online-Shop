@@ -28,8 +28,39 @@
 .nav-items {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end
+    justify-content: flex-end;
+    position: relative;
 }
+
+.nav-items span {
+    cursor: pointer;
+}
+
+.nav-items  div[class='about-us'] {
+    position: absolute;
+    background-color: rgb(248, 248, 248);
+    left: 46vw;
+    border: 1px solid #6b6b6b47;
+    padding: 15px;
+    top: 8vh;
+    width: 300px;
+    box-shadow: 0px 0px 5px 0px #80808094;
+    border-radius: 6px;
+    color: gray;
+}
+
+.nav-items  div[class='contact-us'] {
+    position: absolute;
+    background-color: rgb(248, 248, 248);
+    left: 20vw;
+    border: 1px solid #6b6b6b47;
+    padding: 15px;
+    top: 8vh;
+    width: 300px;
+    box-shadow: 0px 0px 5px 0px #80808094;
+    border-radius: 6px;
+    color: gray;
+    }
 
 .toolbar>nav span {
     color: #445778;

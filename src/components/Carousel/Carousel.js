@@ -24,7 +24,7 @@ const Carousel = () => {
         if (currentIndex < 5) {
             setCurrentIndex(currentIndex + 1);
             setImage(getImageByIndex(currentIndex + 1));
-            console.log(currentIndex);
+            // console.log(currentIndex);
         }
     }
 
@@ -34,13 +34,12 @@ const Carousel = () => {
             setImage(getImageByIndex(currentIndex - 1));
         }
     }
-    // let x;
-    // if (currentIndex < 5) {
-    //     x = setInterval(increase, 2000)
-    // }
-    //  if(!currentIndex < 5) {
-    //     clearInterval(x)
-    // }
+
+    
+    setTimeout(increase, 5000)
+    if(currentIndex == 5) {
+        setCurrentIndex(-1);
+    }
 
     const text = 'فروشگاه آنلاین';
     function writeText() {
