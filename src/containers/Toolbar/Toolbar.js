@@ -7,7 +7,13 @@ import MenuItem from '../../components/MenuItem/MenuItem';
 import Modal from "../../components/Modal/Modal";
 import SignIn from "../../components/SignIn/SignIn";
 import Backdrop from "../../components/Backdrop/Backdrop";
-import { Context } from "../Context/NotificationContext";
+import { NotificationContext } from "../Context/NotificationContext";
+import ShoppingBoxContent from "../../components/ShoppingBoxContent/ShoppingBoxContent";
+import { ShoppingBoxContext } from "../Context/ShoppingBoxContext";
+import { SignInContext } from "../Context/SignInContext";
+import { Link, Outlet } from "react-router-dom";
+import AboutUs from "../../components/ِAboutUs";
+import ContactUs from "../../components/ContactUs";
 
 
 const Toolbar = () => {
@@ -17,8 +23,11 @@ const Toolbar = () => {
     const [showShoppingBox, setShowShoppingBox] = useState(false);
     const [showAboutUs, setShowAboutUs] = useState(false);
     const [showContactUs, setShowContactUs] = useState(false);
-    const notificationsLength = useContext(Context);
-    
+    const notificationContext = useContext(NotificationContext);
+    const { notificationsValue, setNotificationsValue, notificationNumber } = notificationContext;
+    const shoppingBoxContext = useContext(ShoppingBoxContext);
+    const { shoppingBoxValue, setShoppingBoxValue, itemNumber, setItemNumber } = shoppingBoxContext;
+    const { user, setUser } = useContext(SignInContext);
 
     const styles1 = {
         width: '100%',
@@ -34,12 +43,11 @@ const Toolbar = () => {
     }
 
     function showLoginModal() {
-        setShowLogInModal(true);
+        setShowLogInModal(true)
     }
     function closeLoginModal() {
         setShowLogInModal(false);
     }
-
 
     function showHambergerMenu() {
         setShowHamberger(true)
@@ -55,21 +63,45 @@ const Toolbar = () => {
         setShowShoppingBox(false)
     }
 
+    function showAboutUsModal() {
+        setShowAboutUs(true)
+    }
+    function closeAboutUsModal() {
+        setShowAboutUs(false)
+    }
+
+    function showContactUsModal() {
+        setShowContactUs(true)
+    }
+    function closeContactUsModal() {
+        setShowContactUs(false)
+    }
+
+    function exit() {
+        setUser(null)
+        alert('از حساب کاربری خود خارج شدید')
+    }
+
     return (
         <>
             <header className="toolbar">
 
                 <div style={{ color: 'white' }}>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <Button btnStyle="btn-style" clicked={showLoginModal} >
-                            ورود و ثبت نام
+                        <Button btnStyle="btn-style" clicked={user ? exit : showLoginModal} >
+                            {
+                                user ? 'خروج' : 'ورود / ثبت نام'
+                            }
+
                         </Button>
-                        <i className="material-icons shop" onClick={showShoppingBoxModal}> shopping_basket </i>
-                        <span className="badge">1</span>
-                        <MenuItems styles={styles2}>
-                            <MenuItem style={{ padding: '0px', display: 'flex' }} link='/notification' ><i className="material-icons notif"> notifications </i></MenuItem>
-                        </MenuItems>
-                        <span className="badge">{notificationsLength.length}</span>
+                        <span className="icon">
+                            <i className="material-icons shop" onClick={showShoppingBoxModal}> shopping_basket </i>
+                            {itemNumber == 0 ? null : <span className="badge">{itemNumber}</span>}
+                        </span>
+                        <span className="icon">
+                            <Link className="notification-link" to='/notification' ><i className="material-icons notif"> notifications </i></Link>
+                            {notificationNumber == 0 ? null : <span className="badge">{notificationNumber}</span>}
+                        </span>
                     </div>
                     <Logo />
                 </div>
@@ -79,14 +111,8 @@ const Toolbar = () => {
                         <MenuItems styles={styles1}>
                             <MenuItem link='/' > صفحه اصلی </MenuItem>
                             <MenuItem link='/store' >فروشگاه </MenuItem>
-                            <span onClick={() => setShowAboutUs(!showAboutUs)}>درباره ما </span>
-                            <span onClick={() => setShowContactUs(!showContactUs)}>تماس با ما </span>
-                            {
-                                showAboutUs ? <div className="about-us">درباره ما</div> : null
-                            }
-                            {
-                                showContactUs ? <div className="contact-us">تماس با ما</div> : null
-                            }
+                            <span onClick={showAboutUsModal} >درباره ما </span>
+                            <span onClick={showContactUsModal}>تماس با ما </span>
                         </MenuItems>
                     </div>
 
@@ -109,8 +135,15 @@ const Toolbar = () => {
                 showLogInModal ? <Modal modalStyle='log-in-modal' Closed={closeLoginModal}> <SignIn /> </Modal> : null
             }
             {
-                showShoppingBox ? <Modal modalStyle='log-in-modal' Closed={closeShoppingBoxModal}> <h1>shopping box</h1> </Modal> : null
+                showShoppingBox ? <Modal modalStyle='shopping-box-modal' Closed={closeShoppingBoxModal}> <ShoppingBoxContent /> </Modal> : null
             }
+            {
+                showAboutUs ? <Modal modalStyle='log-in-modal' Closed={closeAboutUsModal}> <AboutUs /> </Modal> : null
+            }
+            {
+                showContactUs ? <Modal modalStyle='log-in-modal' Closed={closeContactUsModal}> <ContactUs /> </Modal> : null
+            }
+            <Outlet />
         </>
     )
 }

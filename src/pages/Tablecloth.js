@@ -22,73 +22,73 @@ const TableCloth = () => {
         {
             itemAddress: tableclothImage1,
             itemName: 'رومیزی کد 610',
-            itemPrice: '110 000 تومان',
+            itemPrice: 110000,
             itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage2,
             itemName: 'رومیزی کد 611',
-            itemPrice: '120 000 تومان',
+            itemPrice: 120000,
             itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage3,
             itemName: 'رومیزی کد 118',
-            itemPrice: '100 000 تومان',
+            itemPrice: 100000,
             itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage4,
             itemName: 'رومیزی کد 612',
-            itemPrice: '80 000 تومان',
+            itemPrice: 80000,
             itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage5,
             itemName: 'رومیزی کد 215',
-            itemPrice: '200 000 تومان',
+            itemPrice: 200000,
             itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage6,
             itemName: 'رومیزی کد 613',
-            itemPrice: '210 000 تومان',
+            itemPrice: 220000,
             itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage7,
             itemName: 'رومیزی کد 614',
-            itemPrice: '150 000 تومان',
+            itemPrice: 150000,
             itemInformation:'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage8,
             itemName: 'رومیزی کد 615',
-            itemPrice: '$',
+            itemPrice: 160000,
             itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage9,
             itemName: 'رومیزی کد 616',
-            itemPrice: '140 000 تومان',
+            itemPrice: 140000,
             itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage10,
             itemName: 'رومیزی کد 617',
-            itemPrice: '160 000 تومان',
+            itemPrice: 160000,
             itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage11,
             itemName: 'رومیزی کد 618',
-            itemPrice: '150 000 نومان',
+            itemPrice: 150000,
             itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage12,
             itemName: 'رومیزی کد 619',
-            itemPrice: '200 000 تومان',
+            itemPrice: 200000,
             itemInformation: 'اطلاعات محصول'
         }
     ]

@@ -43,20 +43,20 @@
 }
 
 .part-2-1 {
-    width: 40%;
+    width: 82%;
+}
+
+.part-2-1 p {
+    cursor: pointer;
 }
 
 .part-2-2 {
-    width: 40%;
-}
-
-.part-2-3 {
     width: 18%;
     display: flex;
     flex-direction: column-reverse;
 }
 
-.part-2-3 img {
+.part-2-2 img {
     width: 110px;
 }
 

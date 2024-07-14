@@ -9,4 +9,5 @@ const Backdrop = (props) => {
         <div className="backdrop-style" onClick={props.Closed} ></div>
     )
 }
+
 export default Backdrop;

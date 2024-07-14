@@ -2,20 +2,24 @@ import React, { useState } from "react";
 import './BackToTop.css';
 
 const BackToTop = () => {
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(false);
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 110) {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             setShow(true)
         }
         else {
             setShow(false)
         }
+        
     })
     function backToTop() {
         window.scrollTo({ top: 0, behavior: `smooth` })
     }
     return (
-        <div className={show ? 'active' : 'deActive'} >
+        <div className={show ? 'active' : 'de-active'} >
             <i className="material-icons" onClick={backToTop}>expand_less</i>
         </div >
     )

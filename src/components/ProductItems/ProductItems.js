@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import './ProdactItems.css';
 import ProdactItem from "../ProdactItem/ProdactItem";
 
 const ProdactItems = (props) => {
     const [arrayItems, setArrayItems] = useState(props.arrayItems);
-    const [neda, setNeda] = useState([]);
+    const [data, setData] = useState([]);
     const [searchBarValue, setSearchBarValue] = useState('');
+    const searchBarInput = useRef()
+
     useEffect(() => {
-        setNeda(arrayItems)
+        // searchBarInput.current.focus()
+        setData(arrayItems)
     }, [])
     const searchFilterFunction = (event) => {
-        const itemData = neda.filter((item) => {
+        const itemData = data.filter((item) => {
             const name = item.itemName;
             const text = event.target.value;
             return name.indexOf(text) > -1
@@ -23,7 +26,7 @@ const ProdactItems = (props) => {
 
             {
                 props.showSearchBar ? <div className="search-bar-container">
-                    <input className="search-ber-filter" type="text" value={searchBarValue} onChange={searchFilterFunction} />
+                    <input ref={searchBarInput} className="search-ber-filter" type="text" value={searchBarValue} onChange={searchFilterFunction} />
                     <i style={{ color: 'lightgray' }} className="material-icons" >search</i>
                 </div> : null
             }
@@ -34,13 +37,16 @@ const ProdactItems = (props) => {
             </div>
             <div className="box-items">
                 {
-                    arrayItems.map((item) => {
-                        return <ProdactItem
+                    arrayItems.map((item, index) => {
+                        return <div className="prodact-item-container" key={index}>
+                            <ProdactItem
+                            itemKey={index}
                             imageAddress={item.itemAddress}
                             itemName={item.itemName}
                             itemPrice={item.itemPrice}
                             itemInformation={item.itemInformation}
                         />
+                        </div>
                     })
                 }
             </div>

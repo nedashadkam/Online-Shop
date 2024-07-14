@@ -11,41 +11,42 @@ import Candle from './pages/Candle';
 import Ceramic from './pages/Ceramic';
 import Store from './pages/Store/Store';
 import Notification from './pages/Notification/Notification';
-import { Context } from './containers/Context/NotificationContext';
+import NotificationContextProvider from './containers/Context/NotificationContext';
+import ShoppingBoxContextProvider from './containers/Context/ShoppingBoxContext';
+import SignInContextProvider from './containers/Context/SignInContext';
 
 function App() {
 
-  const [notificationsValue, setNotificationsValue] = useState('')
-  useEffect(()=>{
-    fetch('https://66374a35288fedf6937ff19b.mockapi.io/notification')
-    .then((response)=>response.json()).then((jsonResponse)=> setNotificationsValue(jsonResponse))
-  },[])
-
-  // console.log(notificationsValue)
   return (
     <div className="App">
-      <Context.Provider value={notificationsValue}>
-      <BrowserRouter>
-        <Toolbar />
-        <Routes>
-            <Route index element={<HomePage />} />
-            <Route path='/store' element={<Store />} />
-            <Route path='/store/pottery' element={<Pottery />} />
-            <Route path='/store/wodden' element={<Wooden />} />
-            <Route path='/store/glass' element={<Glass />} />
-            <Route path='/store/candle' element={<Candle />} />
-            <Route path='/store/ceramic' element={<Ceramic />} />
-            <Route path='/store/tablecloth' element={<TableCloth />} />
-            <Route path='/notification' element={<Notification />} />
-            <Route path='*' element={
-              <main>
-                <div className='no-page'>
-                </div>
-              </main>
-            } />
-        </Routes>
-      </BrowserRouter>
-      </Context.Provider>
+      <SignInContextProvider>
+      <NotificationContextProvider>
+        <ShoppingBoxContextProvider>
+          <BrowserRouter>
+            {/* <Toolbar /> */}
+            <Routes>
+              <Route path='/' element={ <Toolbar />}>
+              <Route index element={<HomePage />} />
+              <Route path='/store' element={<Store />} />
+              <Route path='/store/pottery' element={<Pottery />} />
+              <Route path='/store/wodden' element={<Wooden />} />
+              <Route path='/store/glass' element={<Glass />} />
+              <Route path='/store/candle' element={<Candle />} />
+              <Route path='/store/ceramic' element={<Ceramic />} />
+              <Route path='/store/tablecloth' element={<TableCloth />} />
+              <Route path='/notification' element={<Notification />} />
+              <Route path='*' element={
+                <main>
+                  <div className='no-page'>
+                  </div>
+                </main>
+              } /></Route>
+              
+            </Routes>
+          </BrowserRouter>
+        </ShoppingBoxContextProvider>
+      </NotificationContextProvider>
+      </SignInContextProvider>
     </div>
   );
 }
