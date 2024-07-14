@@ -1,0 +1,56 @@
+.shopping-box-container {
+    display: flex;
+    flex-direction: column;
+    color: #605f5f;
+    font-size: smaller;
+}
+
+.shopping-box-container p {
+    background-color: #2db193;
+    padding: 5px;
+    color: white;
+    border: 1px solid #2db193;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.shopping-box-item-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+.shopping-box-item-container i {
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.shopping-box-item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d391;
+}
+
+.shopping-box-item img {
+    width: 70px;
+    border-radius: 5px;
+}
+
+.shopping-box-item span {
+    padding: 5px;
+}
