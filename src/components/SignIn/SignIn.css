@@ -10,6 +10,7 @@ input {
     border: 1px solid #bdbdbd;
     border-radius: 6px;
     color: #6e6e6e;
+    text-align: end;
 }
 
 input:hover {
@@ -40,4 +41,8 @@ input:focus {
     height: 32px;
     cursor: pointer;
     border-radius: 50px;
+}
+
+.captcha input {
+    text-align: start;
 }
