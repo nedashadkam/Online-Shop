@@ -34,13 +34,13 @@ const Ceramic = () => {
             itemAddress: ceramicImage3,
             itemName: 'کاسه دو عددی طرح پرنده کد 401',
             itemPrice: 180000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: ceramicImage4,
             itemName: 'ظروف طرح گوزن کد 402',
             itemPrice: 250000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: ceramicImage5,
@@ -52,7 +52,7 @@ const Ceramic = () => {
             itemAddress: ceramicImage6,
             itemName: 'کاسه چهار عددی کد 216',
             itemPrice: 370000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: ceramicImage7,

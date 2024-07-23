@@ -15,7 +15,7 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    animation: run 1s ease-out backwards ;
+    animation: run 1s ease-out backwards;
     /* transition: all 0.5s linear; */
 }
 

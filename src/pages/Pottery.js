@@ -28,7 +28,7 @@ const Pottery = () => {
             itemAddress: potteryImega2,
             itemName: 'ست سفالی کد 650',
             itemPrice: 200000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: potteryImega3,
@@ -40,7 +40,7 @@ const Pottery = () => {
             itemAddress: potteryImega4,
             itemName: 'دیوار کوب کد 218',
             itemPrice: 70000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: potteryImega5,

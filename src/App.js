@@ -20,32 +20,32 @@ function App() {
   return (
     <div className="App">
       <SignInContextProvider>
-      <NotificationContextProvider>
-        <ShoppingBoxContextProvider>
-          <BrowserRouter>
-            {/* <Toolbar /> */}
-            <Routes>
-              <Route path='/' element={ <Toolbar />}>
-              <Route index element={<HomePage />} />
-              <Route path='/store' element={<Store />} />
-              <Route path='/store/pottery' element={<Pottery />} />
-              <Route path='/store/wodden' element={<Wooden />} />
-              <Route path='/store/glass' element={<Glass />} />
-              <Route path='/store/candle' element={<Candle />} />
-              <Route path='/store/ceramic' element={<Ceramic />} />
-              <Route path='/store/tablecloth' element={<TableCloth />} />
-              <Route path='/notification' element={<Notification />} />
-              <Route path='*' element={
-                <main>
-                  <div className='no-page'>
-                  </div>
-                </main>
-              } /></Route>
-              
-            </Routes>
-          </BrowserRouter>
-        </ShoppingBoxContextProvider>
-      </NotificationContextProvider>
+        <NotificationContextProvider>
+          <ShoppingBoxContextProvider>
+            <BrowserRouter>
+              {/* <Toolbar /> */}
+              <Routes>
+                <Route path='/' element={<Toolbar />}>
+                  <Route index element={<HomePage />} />
+                  <Route path='/store' element={<Store />} />
+                  <Route path='/store/pottery' element={<Pottery />} />
+                  <Route path='/store/wodden' element={<Wooden />} />
+                  <Route path='/store/glass' element={<Glass />} />
+                  <Route path='/store/candle' element={<Candle />} />
+                  <Route path='/store/ceramic' element={<Ceramic />} />
+                  <Route path='/store/tablecloth' element={<TableCloth />} />
+                  <Route path='/notification' element={<Notification />} />
+                  <Route path='*' element={
+                    <main>
+                      <div className='no-page'>
+                      </div>
+                    </main>
+                  } /></Route>
+
+              </Routes>
+            </BrowserRouter>
+          </ShoppingBoxContextProvider>
+        </NotificationContextProvider>
       </SignInContextProvider>
     </div>
   );

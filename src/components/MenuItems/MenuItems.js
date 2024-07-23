@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const MenuItems = (props) => {
-    
+
     return (
         <ul style={props.styles}>
             {props.children}
@@ -9,3 +10,8 @@ const MenuItems = (props) => {
     )
 }
 export default MenuItems;
+
+MenuItems.propTypes = {
+    styles: PropTypes.object,
+    // children : PropTypes.arrayOf(PropTypes.element)
+}

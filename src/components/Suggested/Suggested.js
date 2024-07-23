@@ -23,13 +23,13 @@ const Suggested = () => {
             itemAddress: suggestedItem1,
             itemName: 'شمع دو عددی کد 111',
             itemPrice: 82000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: suggestedItem2,
             itemName: 'شمع طرح صدف کد 112',
             itemPrice: 56000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: suggestedItem3,
@@ -41,13 +41,13 @@ const Suggested = () => {
             itemAddress: suggestedItem4,
             itemName: 'کاسه دو عددی کد 114',
             itemPrice: 106000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: suggestedItem5,
             itemName: 'سرویس سفالی کد 115',
             itemPrice: 210000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: suggestedItem6,
@@ -73,13 +73,13 @@ const Suggested = () => {
             itemAddress: newItem1,
             itemName: 'شمع قلمی کد 211',
             itemPrice: 11000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: newItem2,
             itemName: 'ظرف چوبی کد 212',
             itemPrice: 58000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: newItem3,
@@ -103,7 +103,7 @@ const Suggested = () => {
             itemAddress: newItem6,
             itemName: ' کاسه چهار عددی کد 216',
             itemPrice: 370000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: newItem7,
@@ -120,8 +120,8 @@ const Suggested = () => {
     ]
     return (
         <>
-        <ProdactItems showSearchBar={false} arrayItems={SuggestedItem} title='پیشنهادی ' />
-        <ProdactItems showSearchBar={false} arrayItems={newItem} title='جدیدترین ها ' />
+            <ProdactItems showSearchBar={false} arrayItems={SuggestedItem} title='پیشنهادی ' />
+            <ProdactItems showSearchBar={false} arrayItems={newItem} title='جدیدترین ها ' />
         </>
     )
 }

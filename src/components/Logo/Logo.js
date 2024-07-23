@@ -3,7 +3,7 @@ import logo from '../../assets/images/—Pngtree—online shopping logo desing_8
 
 const Logo = () => {
 
-    const styles ={
+    const styles = {
         width: '80px',
         height: 'auto',
         marginTop: '10px'

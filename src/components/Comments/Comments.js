@@ -75,8 +75,6 @@ const Comments = () => {
                             <div>{item.commentText}</div>
                         </div>
                     })
-
-
                 }
             </div>
         </div>

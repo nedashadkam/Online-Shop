@@ -7,6 +7,7 @@ import { register, logIn } from "../../services/LoginService";
 import { SignInContext } from "../../containers/Context/SignInContext";
 
 const SignIn = () => {
+
     const [randomNumber1, setRandomNumber1] = useState(0);
     const [randomNumber2, setRandomNumber2] = useState(0);
     const [sumHolder, setSumHolder] = useState(0);
@@ -17,7 +18,6 @@ const SignIn = () => {
     const [password, setPassword] = useState('');
     const { user, setUser } = useContext(SignInContext);
     console.log(user)
-
 
     useEffect(() => {
         generateCaptcha();

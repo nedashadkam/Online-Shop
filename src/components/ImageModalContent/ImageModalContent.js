@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './ImageModalContent.css';
+import PropTypes from 'prop-types';
 
 const ImageModalContent = (props) => {
     const [imageStyle, setImageStyle] = useState({});
@@ -10,14 +11,14 @@ const ImageModalContent = (props) => {
         setImageStyle({
             transformOrigin: `${x}px ${y}px`,
             transform: 'scale(2)'
-        })  
+        })
     }
 
     const mouseLeave = (e) => {
         setImageStyle({
             transformOrigin: 'center center',
             transform: 'scale(1)'
-        }) 
+        })
     }
 
     return (
@@ -31,3 +32,8 @@ const ImageModalContent = (props) => {
 }
 
 export default ImageModalContent;
+
+ImageModalContent.propTypes = {
+    itemInformation: PropTypes.func.isRequired,
+    modalImgAddress: PropTypes.func.isRequired
+}

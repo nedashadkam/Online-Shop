@@ -6,7 +6,6 @@ import Carousel from "../../components/Carousel/Carousel";
 import BackToTop from "../../components/BackToTop/BackToTop";
 import Comments from "../../components/Comments/Comments";
 
-
 const HomePage = () => {
 
     return (

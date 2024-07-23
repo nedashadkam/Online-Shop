@@ -7,21 +7,19 @@ import ShoppingBoxContent from "../ShoppingBoxContent/ShoppingBoxContent";
 import AboutUs from "../ِAboutUs";
 import ContactUs from "../ContactUs";
 
-
 const Footer = () => {
     const [showLogInModal, setShowLogInModal] = useState(false);
     const [showShoppingBox, setShowShoppingBox] = useState(false);
     const [showAboutUs, setShowAboutUs] = useState(false);
     const [showContactUs, setShowContactUs] = useState(false);
-    
-    
+
     function showLoginModal() {
         setShowLogInModal(true);
     }
     function closeLoginModal() {
         setShowLogInModal(false);
     }
-    
+
     function showShoppingBoxModal() {
         setShowShoppingBox(true)
     }
@@ -76,7 +74,7 @@ const Footer = () => {
             {
                 showContactUs ? <Modal modalStyle='log-in-modal' Closed={closeContactUsModal}> <ContactUs /> </Modal> : null
             }
-           
+
         </footer>
     )
 }

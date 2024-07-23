@@ -16,20 +16,19 @@ import woodenImage10 from '../assets/images/wooden/wooden-10.jpg';
 import woodenImage11 from '../assets/images/wooden/wooden-11.jpg';
 import woodenImage12 from '../assets/images/wooden/wooden-12.jpg';
 
-
 const Wooden = () => {
     const woodenItems = [
         {
             itemAddress: woodenImage1,
             itemName: 'ست چوبی کد 116',
             itemPrice: 300000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage2,
             itemName: 'ظرف چوبی کد 212',
             itemPrice: 58000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage3,
@@ -41,13 +40,13 @@ const Wooden = () => {
             itemAddress: woodenImage4,
             itemName: 'کاسه چوبی کد 711',
             itemPrice: 100000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage5,
             itemName: 'ست چوبی کد 712',
             itemPrice: 600000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage6,
@@ -59,13 +58,13 @@ const Wooden = () => {
             itemAddress: woodenImage7,
             itemName: 'زیر لیوانی چوبی کد 714 ',
             itemPrice: 160000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage8,
             itemName: 'گلدان چوبی کد 715',
             itemPrice: 200000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: woodenImage9,

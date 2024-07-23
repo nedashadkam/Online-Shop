@@ -1,4 +1,4 @@
-.de-active {
+.common-styles {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -11,28 +11,18 @@
     border-radius: 50px;
     background-color: #2db193;
     cursor: pointer;
-    opacity: 0;
     transition: 0.5s ease;
+}
+
+.de-active {
+    opacity: 0;
 }
 
 .active {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 30px;
-    bottom: 30px;
-    padding: 5px;
-    width: 36px;
-    height: 36px;
-    border-radius: 50px;
-    background-color: #2db193;
-    cursor: pointer;
     opacity: 1;
-    transition: 0.5s ease;
 }
 
- i {
+i {
     padding: 0;
     color: white;
     font-size: 25px;

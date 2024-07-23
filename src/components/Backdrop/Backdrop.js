@@ -1,8 +1,6 @@
 import React from 'react';
 import './Backdrop.css';
-// const Backdrop=(props)=>(
-//     props.show?<div className="backdrop-style" onClick={props.modalClosed} >{props.children}</div>:null
-// )
+import PropTypes from 'prop-types';
 
 const Backdrop = (props) => {
     return (
@@ -11,3 +9,7 @@ const Backdrop = (props) => {
 }
 
 export default Backdrop;
+
+Backdrop.propTypes = {
+    Closed: PropTypes.func.isRequired
+}

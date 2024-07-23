@@ -1,5 +1,5 @@
-import React, {useState} from "react";
- 
+import React, { useState } from "react";
+
 export const ShoppingBoxContext = React.createContext();
 
 const ShoppingBoxContextProvider = (props) => {
@@ -7,7 +7,7 @@ const ShoppingBoxContextProvider = (props) => {
     const [itemNumber, setItemNumber] = useState(shoppingBoxValue.length)
 
     return (
-        <ShoppingBoxContext.Provider value={{shoppingBoxValue, setShoppingBoxValue, itemNumber, setItemNumber}}>
+        <ShoppingBoxContext.Provider value={{ shoppingBoxValue, setShoppingBoxValue, itemNumber, setItemNumber }}>
             {props.children}
         </ShoppingBoxContext.Provider>
     )

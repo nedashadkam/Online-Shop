@@ -22,7 +22,7 @@ const Glass = () => {
             itemAddress: glassImega1,
             itemName: 'ظرف استوانه ای کد 501',
             itemPrice: 60000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: glassImega2,
@@ -40,7 +40,7 @@ const Glass = () => {
             itemAddress: glassImega4,
             itemName: 'گلدان شیشه ای کد 503',
             itemPrice: 60000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: glassImega5,
@@ -58,13 +58,13 @@ const Glass = () => {
             itemAddress: glassImega7,
             itemName: 'تنگ شیشه ای کد 506',
             itemPrice: 90000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: glassImega8,
             itemName: 'تنگ شیشه ای کد 507',
             itemPrice: 150000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: glassImega9,
@@ -88,7 +88,7 @@ const Glass = () => {
             itemAddress: glassImega12,
             itemName: 'گلدان شیشه ای کد 510',
             itemPrice: 90000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         }
     ]
     return (

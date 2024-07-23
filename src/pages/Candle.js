@@ -15,7 +15,6 @@ import candleImage9 from '../assets/images/candle/candle-9.jpg';
 import candleImage10 from '../assets/images/candle/candle-10.jpg';
 import candleImage11 from '../assets/images/candle/candle-11.jpg';
 import candleImage12 from '../assets/images/candle/candle-12.jpg';
- 
 
 const Candle = () => {
     const candleItems = [

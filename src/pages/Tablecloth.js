@@ -16,7 +16,6 @@ import tableclothImage10 from '../assets/images/tablecloth/tablecloth-10.jpg';
 import tableclothImage11 from '../assets/images/tablecloth/tablecloth-11.jpg';
 import tableclothImage12 from '../assets/images/tablecloth/tablecloth-12.jpg';
 
-
 const TableCloth = () => {
     const tableclothItems = [
         {
@@ -35,13 +34,13 @@ const TableCloth = () => {
             itemAddress: tableclothImage3,
             itemName: 'رومیزی کد 118',
             itemPrice: 100000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage4,
             itemName: 'رومیزی کد 612',
             itemPrice: 80000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage5,
@@ -53,13 +52,13 @@ const TableCloth = () => {
             itemAddress: tableclothImage6,
             itemName: 'رومیزی کد 613',
             itemPrice: 220000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage7,
             itemName: 'رومیزی کد 614',
             itemPrice: 150000,
-            itemInformation:'اطلاعات محصول'
+            itemInformation: 'اطلاعات محصول'
         },
         {
             itemAddress: tableclothImage8,

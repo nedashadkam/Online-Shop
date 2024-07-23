@@ -4,13 +4,13 @@ import './ProdactItem.css';
 import Modal from '../Modal/Modal';
 import ImageModalContent from '../ImageModalContent/ImageModalContent';
 import { ShoppingBoxContext } from "../../containers/Context/ShoppingBoxContext";
+import PropTypes from 'prop-types';
 
 const ProdactItem = (props) => {
 
     const [showImgModal, setShowImgModal] = useState(false);
     const shoppingBoxContext = useContext(ShoppingBoxContext);
-    const {shoppingBoxValue, setShoppingBoxValue, itemNumber, setItemNumber} = shoppingBoxContext;
-
+    const { shoppingBoxValue, setShoppingBoxValue, itemNumber, setItemNumber } = shoppingBoxContext;
 
     function showModal() {
         setShowImgModal(true)
@@ -20,7 +20,7 @@ const ProdactItem = (props) => {
     }
 
     // console.log(shoppingBoxValue)
-    function addToShoppingBox () {
+    function addToShoppingBox() {
         shoppingBoxValue.push({
             imageAddress: props.imageAddress,
             itemName: props.itemName,
@@ -50,3 +50,10 @@ const ProdactItem = (props) => {
 }
 
 export default ProdactItem;
+
+ProdactItem.propTypes = {
+    imageAddress: PropTypes.string.isRequired,
+    itemName: PropTypes.string.isRequired,
+    itemPrice: PropTypes.number.isRequired,
+    itemInformation: PropTypes.string.isRequired,
+}

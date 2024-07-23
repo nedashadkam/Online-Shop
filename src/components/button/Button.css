@@ -1,15 +1,4 @@
-
-@font-face {
-    font-family: 'yekan';
-    src: url('../../assets/fonts/yekan/BYekan.eot');
-    src: url('../../assets/fonts/yekan/BYekan.svg') format('eot');
-    src: url('../../assets/fonts/yekan/BYekan.ttf') format('woff');
-    src: url('../../assets/fonts/yekan/BYekan.woff') format('woff2');
-  }
-  
-  
-  .btn-style {
-    font-family: 'yekan';
+.btn-style {
     background-color: #2db193;
     color: white;
     padding: 6px 12px;
@@ -22,7 +11,6 @@
 }
 
 .log-btn-style {
-    font-family: 'yekan';
     background-color: #2db193;
     color: white;
     width: 90%;
@@ -37,7 +25,6 @@
 }
 
 .register-btn-style {
-    font-family: 'yekan';
     background-color: #8c0048;
     border: 1px solid #8c0048;
     color: white;
@@ -63,7 +50,6 @@
 }
 
 .show-notif {
-    font-family: 'yekan';
     background-color: #2db193;
     color: white;
     padding: 5px 15px;
@@ -76,7 +62,6 @@
 }
 
 .comment-btn {
-    font-family: 'yekan';
     background-color: #d71111;
     color: white;
     padding: 2px 15px;
@@ -89,7 +74,8 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
- .shopping-box-btn {
+
+.shopping-box-btn {
     background-color: #8c0048;
     border: 1px solid #8c0048;
     padding: 5px;
@@ -97,5 +83,4 @@
     font-size: 17px;
     border-radius: 5px;
     cursor: pointer;
- }
-
+}
