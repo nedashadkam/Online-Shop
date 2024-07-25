@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## images 1
+
+![alt text](https://github.com/nedashadkam/Online-Shop/blob/main/pages-img/screencapture-localhost-3200-2024-07-25-11_10_01.png?raw=true)
+
+## images 2
+
+
+![alt text](https://github.com/nedashadkam/Online-Shop/blob/main/pages-img/screencapture-localhost-3200-store-2024-07-25-11_10_55.png?raw=true)
+
+## images 3
+
+![alt text](https://github.com/nedashadkam/Online-Shop/blob/main/pages-img/Screenshot%20(284).png?raw=true)
+## images 4
+
+![alt text](https://github.com/nedashadkam/Online-Shop/blob/main/pages-img/screencapture-localhost-3200-notification-2024-07-25-10_51_34.png?raw=true)
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
