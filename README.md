@@ -13,8 +13,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## images 3
 
-![alt text](https://github.com/nedashadkam/Online-Shop/blob/main/pages-img/Screenshot%20(284).png?raw=true)
+![alt text](https://github.com/nedashadkam/Online-Shop/blob/main/pages-img/Capture.PNG?raw=true)
 ## images 4
+
+
+![alt text](https://github.com/nedashadkam/Online-Shop/blob/main/pages-img/Screenshot%20(284).png?raw=true)
+## images 5
 
 ![alt text](https://github.com/nedashadkam/Online-Shop/blob/main/pages-img/screencapture-localhost-3200-notification-2024-07-25-10_51_34.png?raw=true)
 
