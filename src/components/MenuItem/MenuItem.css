@@ -1,8 +1,15 @@
 .navlink-style {
-    padding: 0px 10px;
+    padding-bottom: 2px;
+    margin: 0px 10px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    border-bottom: 2px transparent solid;
+    transition: border-color 0.3s ease-in;
+}
+
+.navlink-style:hover {
+    border-color: #445778d3;
 }
 
 .red {

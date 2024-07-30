@@ -38,8 +38,16 @@
 
 .toolbar>nav span {
     color: #445778;
-    padding: 0 10px;
+    padding-bottom: 2px;
+    margin: 0px 10px;
     font-weight: bold;
+    border-bottom: 2px transparent solid;
+    transition: border-color 0.3s ease-in;
+
+}
+
+.toolbar>nav span:hover {
+    border-color: #445778d3;
 }
 
 .notification-link {
