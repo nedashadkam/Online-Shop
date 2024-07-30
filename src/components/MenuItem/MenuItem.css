@@ -13,7 +13,12 @@
 }
 
 .red {
-    color: red;
+    color: #cf0d0d;
+    border-bottom: 2px solid #cf0d0d;
+}
+
+.red:hover {
+    border-color: #cf0d0d;
 }
 
 .blue {

@@ -45,7 +45,7 @@ const Footer = () => {
         <footer className="footer-container">
             <div className="footer-part-1">
                 <p> آدرس : تهران کیانشهر خیابان ابرهیمی
-                    <i className="material-icons red">place</i>
+                    <i className="material-icons redd">place</i>
                 </p>
                 <p> امور مشتریان 09140741024 - 02144652145
                     <i className="material-icons green">phone</i>
