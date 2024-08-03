@@ -8,17 +8,13 @@
     transition: border-color 0.3s ease-in;
 }
 
-.navlink-style:hover {
+nav .navlink-style:hover {
     border-color: #445778d3;
 }
 
 .red {
     color: #cf0d0d;
-    border-bottom: 2px solid #cf0d0d;
-}
-
-.red:hover {
-    border-color: #cf0d0d;
+    border-bottom: none
 }
 
 .blue {
